@@ -1,0 +1,8 @@
+--cpu Cortex-M0+
+".\objects\main.o"
+".\objects\startup_mkl46z4.o"
+".\objects\system_mkl46z4.o"
+--strict --scatter ".\Objects\Blinky_SWFRE.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Blinky_SWFRE.map" -o .\Objects\Blinky_SWFRE.axf
