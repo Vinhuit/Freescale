@@ -1,0 +1,12 @@
+--cpu Cortex-M0+
+".\objects\main.o"
+".\objects\drvled.o"
+".\objects\drvsw.o"
+".\objects\seg_lcd.o"
+".\objects\drvuart.o"
+".\objects\startup_mkl46z4.o"
+".\objects\system_mkl46z4.o"
+--strict --scatter ".\Objects\Bootloader_module_01.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Bootloader_module_01.map" -o .\Objects\Bootloader_module_01.axf

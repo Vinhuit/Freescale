@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.13.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: vinh huynh, CNTT, LIC=MPP74-FR86H-W2QLL-0NAC5-HLE2R-SYCX2
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.13.0.0
+Toolchain Path:  D:\Soft\keil arm\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.13.0.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      PEMicro\Pemicro_ArmCortexInterface.dll V1.11
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\LCD\LCD.uvprojx
+Project File Date:  07/09/2015
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+..\..\..\..\SC_FPT\LCD\MemMapPtr_KL46Z4.h(66): warning:  #47-D: incompatible redefinition of macro "MCU_MEM_MAP_VERSION_MINOR" (declared at line 56 of "D:\Soft\keil arm\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\MKL46Z4.h")
+  #define MCU_MEM_MAP_VERSION_MINOR 0x0000u
+main.c(85): warning:  #188-D: enumerated type mixed with another type
+        NVIC_EnableIRQ(17);
+main.c(150): warning:  #177-D: variable "CB" was declared but never referenced
+        unsigned char CB = 0x00;
+main.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=2752 RO-data=272 RW-data=20 ZI-data=356  
+".\Objects\LCD.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.5.0.pack
+                Keil::Device:Startup:1.0.0
+                Freescale Kinetis KLxx Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\LCD\RTE
+  D:\Soft\keil arm\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  D:\Soft\keil arm\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\system_MKL46Z4.c
+      Source file:   Device\Source\ARM\startup_MKL46Z4.s
+</pre>
+</body>
+</html>

@@ -1,0 +1,11 @@
+--cpu Cortex-M0+
+".\objects\main.o"
+".\objects\_uart.o"
+".\objects\pit_tm.o"
+".\objects\led.o"
+".\objects\startup_mkl46z4.o"
+".\objects\system_mkl46z4.o"
+--library_type=microlib --strict --scatter ".\Objects\uart.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\uart.map" -o .\Objects\uart.axf

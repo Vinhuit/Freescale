@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.13.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Vinh huynh, CNTT, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.13.0.0
+Toolchain Path:  C:\Program Files (x86)\KeilA\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.13.0.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      PEMicro\Pemicro_ArmCortexInterface.dll V1.11
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\Bootloader_module\bootloader.uvprojx
+Project File Date:  08/21/2015
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+main.c(60): warning:  #111-D: statement is unreachable
+                break;
+main.c(67): warning:  #940-D: missing return statement at end of non-void function "string_compare"
+  }
+main.c(52): warning:  #177-D: variable "l1" was declared but never referenced
+      int l1, l2, i;          // Length of both strings, loop index
+main.c(52): warning:  #177-D: variable "l2" was declared but never referenced
+      int l1, l2, i;          // Length of both strings, loop index
+main.c(118): warning:  #177-D: variable "i" was declared but never referenced
+        int i[4];
+main.c(170): warning:  #1-D: last line of file ends without a newline
+  }
+main.c(152): warning:  #177-D: variable "i" was declared but never referenced
+  int i[4],d,e;
+main.c(152): warning:  #177-D: variable "d" was declared but never referenced
+  int i[4],d,e;
+main.c(152): warning:  #177-D: variable "e" was declared but never referenced
+  int i[4],d,e;
+main.c(45): warning:  #177-D: function "Delay" was declared but never referenced
+  static void Delay (uint32_t dlyTicks) {
+main.c: 10 warnings, 0 errors
+linking...
+Program Size: Code=1560 RO-data=236 RW-data=76 ZI-data=308  
+".\Objects\bootloader.axf" - 0 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.6.0.pack
+                Keil::Device:Startup:1.0.0
+                Freescale Kinetis KLxx Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\Bootloader_module\RTE
+  C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\system_MKL46Z4.c
+      Source file:   Device\Source\ARM\startup_MKL46Z4.s
+</pre>
+</body>
+</html>

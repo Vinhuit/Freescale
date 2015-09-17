@@ -1,0 +1,12 @@
+--cpu Cortex-M0+
+".\objects\_uart.o"
+".\objects\led.o"
+".\objects\main.o"
+".\objects\pit_tm.o"
+".\objects\button.o"
+".\objects\startup_mkl46z4.o"
+".\objects\system_mkl46z4.o"
+--library_type=microlib --strict --scatter ".\Objects\bootloader.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\bootloader.map" -o .\Objects\bootloader.axf

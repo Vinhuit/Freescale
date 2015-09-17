@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: abc abc, abc, LIC=03CTG-VMRYI-ADSKK-ZQEDY-HIEFL-RZ5C2
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.12.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DARMCM1.DLL V1.11.00.0
+    Target DLL: PEMicro\Pemicro_ArmCortexInterface.dll
+Dialog DLL:      TARMCM1.DLL V1.08.00.0
+ 
+<h2>Project:</h2>
+F:\GST.050_12520210_SVN\trunk\projects\group02\source\Bootloader_module_01\Bootloader_module_01.uvproj
+Project File Date:  08/19/2015
+
+<h2>Output:</h2>
+Rebuild target 'Bootloader'
+compiling main.c...
+compiling DrvLED.c...
+compiling DrvSW.c...
+DrvSW.c(34): warning:  #188-D: enumerated type mixed with another type
+        NVIC_EnableIRQ(31);
+DrvSW.c(35): warning:  #188-D: enumerated type mixed with another type
+        NVIC_ClearPendingIRQ(31);
+DrvSW.c: 2 warnings, 0 errors
+compiling Seg_LCD.c...
+Seg_LCD.c(11): warning:  #177-D: variable "LCD_Backplane_Pin" was declared but never referenced
+  const static uint8_t LCD_Backplane_Pin[LCD_NUM_BACKPLANE_PINS] = {LCD_BACKPLANE0, LCD_BACKPLANE1, LCD_BACKPLANE2, LCD_BACKPLANE3};
+Seg_LCD.c: 1 warning, 0 errors
+assembling startup_MKL46Z4.s...
+compiling system_MKL46Z4.c...
+linking...
+Program Size: Code=3372 RO-data=244 RW-data=144 ZI-data=352  
+".\Objects\Bootloader_module_01.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.3.0.pack
+                ARM::CMSIS:CORE:4.1.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.6.0.pack
+                Keil::Device:Startup:1.0.0
+                Freescale Kinetis KLxx Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  F:\GST.050_12520210_SVN\trunk\projects\group02\source\Bootloader_module_01\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.1.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\startup_MKL46Z4.s
+      Source file:   Device\Source\system_MKL46Z4.c
+</pre>
+</body>
+</html>

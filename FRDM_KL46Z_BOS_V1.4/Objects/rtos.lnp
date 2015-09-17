@@ -1,0 +1,20 @@
+--cpu Cortex-M0+
+".\objects\board.o"
+".\objects\main.o"
+".\objects\context.o"
+".\objects\i2c.o"
+".\objects\mag3110.o"
+".\objects\mma8451.o"
+".\objects\uart.o"
+".\objects\bos_kernel.o"
+".\objects\bos_timer.o"
+".\objects\bos_common.o"
+".\objects\bos_event.o"
+".\objects\bos_mbx.o"
+".\objects\bos_shell.o"
+".\objects\startup_mkl46z4.o"
+".\objects\system_mkl46z4.o"
+--strict --scatter ".\Objects\rtos.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\rtos.map" -o .\Objects\rtos.axf

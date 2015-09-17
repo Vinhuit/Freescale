@@ -1,0 +1,12 @@
+--cpu Cortex-M0+
+".\objects\main.o"
+".\objects\led.o"
+".\objects\button.o"
+".\objects\_uart.o"
+".\objects\pit_tm.o"
+".\objects\startup_mkl46z4.o"
+".\objects\system_mkl46z4.o"
+--library_type=microlib --strict --scatter ".\Objects\Final_test.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Final_test.map" -o .\Objects\Final_test.axf

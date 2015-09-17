@@ -1,0 +1,172 @@
+Dependencies for Project 'rtos', Target 'KL46Z256': (DO NOT MODIFY !)
+F (.\src\board.c)(0x5566DBB6)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -I.\src\inc-I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\board.o --omf_browse .\objects\board.crf --depend .\objects\board.d)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\MKL46Z4.h)(0x51BFCCC8)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h)(0x53FC3FEA)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\system_MKL46Z4.h)(0x51BFCCC8)
+I (.\src\inc\board.h)(0x5566DACA)
+F (.\src\main.c)(0x55BC29D3)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -I.\src\inc-I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdio.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdlib.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\string.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\MKL46Z4.h)(0x51BFCCC8)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h)(0x53FC3FEA)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\system_MKL46Z4.h)(0x51BFCCC8)
+I (.\src\inc\uart.h)(0x557171F3)
+I (.\src\inc\bos.h)(0x55BC3B60)
+I (.\src\inc\bos_list.h)(0x557113CA)
+I (.\src\inc\bos_common.h)(0x5576B5E2)
+I (.\src\inc\bos_timer.h)(0x55769605)
+I (.\src\inc\bos_shell.h)(0x55714258)
+I (.\src\inc\bos_mbx.h)(0x5577D7B6)
+I (.\src\inc\board.h)(0x5566DACA)
+I (.\src\inc\i2c.h)(0x556C186A)
+I (.\src\inc\mma8451.h)(0x556C1D62)
+I (.\src\inc\mag3110.h)(0x556C1F28)
+F (.\src\bos\arch\context.c)(0x5575221C)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -I.\src\inc-I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\context.o --omf_browse .\objects\context.crf --depend .\objects\context.d)
+I (.\src\inc\bos.h)(0x55BC3B60)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdio.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\string.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (.\src\inc\bos_list.h)(0x557113CA)
+I (.\src\inc\bos_common.h)(0x5576B5E2)
+I (.\src\inc\bos_timer.h)(0x55769605)
+I (.\src\inc\bos_shell.h)(0x55714258)
+I (.\src\inc\bos_mbx.h)(0x5577D7B6)
+F (.\src\bos\drivers\i2c.c)(0x556C17F4)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -I.\src\inc-I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
+I (.\src\inc\i2c.h)(0x556C186A)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdio.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\string.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\MKL46Z4.h)(0x51BFCCC8)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h)(0x53FC3FEA)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\system_MKL46Z4.h)(0x51BFCCC8)
+F (.\src\bos\drivers\mag3110.c)(0x556C1EF1)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -I.\src\inc-I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\mag3110.o --omf_browse .\objects\mag3110.crf --depend .\objects\mag3110.d)
+I (.\src\inc\i2c.h)(0x556C186A)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdio.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\string.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\MKL46Z4.h)(0x51BFCCC8)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h)(0x53FC3FEA)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\system_MKL46Z4.h)(0x51BFCCC8)
+I (.\src\inc\mag3110.h)(0x556C1F28)
+F (.\src\bos\drivers\mma8451.c)(0x556C1D45)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -I.\src\inc-I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\mma8451.o --omf_browse .\objects\mma8451.crf --depend .\objects\mma8451.d)
+I (.\src\inc\i2c.h)(0x556C186A)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdio.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\string.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\MKL46Z4.h)(0x51BFCCC8)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h)(0x53FC3FEA)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\system_MKL46Z4.h)(0x51BFCCC8)
+I (.\src\inc\mma8451.h)(0x556C1D62)
+F (.\src\bos\drivers\uart.c)(0x556BC6EB)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -I.\src\inc-I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdio.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\MKL46Z4.h)(0x51BFCCC8)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h)(0x53FC3FEA)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\system_MKL46Z4.h)(0x51BFCCC8)
+I (.\src\inc\uart.h)(0x557171F3)
+F (.\src\bos\kernel\bos_kernel.c)(0x5577D0A7)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -I.\src\inc-I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\bos_kernel.o --omf_browse .\objects\bos_kernel.crf --depend .\objects\bos_kernel.d)
+I (.\src\inc\bos.h)(0x55BC3B60)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdio.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\string.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (.\src\inc\bos_list.h)(0x557113CA)
+I (.\src\inc\bos_common.h)(0x5576B5E2)
+I (.\src\inc\bos_timer.h)(0x55769605)
+I (.\src\inc\bos_shell.h)(0x55714258)
+I (.\src\inc\bos_mbx.h)(0x5577D7B6)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\MKL46Z4.h)(0x51BFCCC8)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h)(0x53FC3FEA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\system_MKL46Z4.h)(0x51BFCCC8)
+F (.\src\bos\kernel\bos_timer.c)(0x556ECABC)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -I.\src\inc-I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\bos_timer.o --omf_browse .\objects\bos_timer.crf --depend .\objects\bos_timer.d)
+I (.\src\inc\bos_timer.h)(0x55769605)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdio.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\string.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (.\src\inc\bos.h)(0x55BC3B60)
+I (.\src\inc\bos_list.h)(0x557113CA)
+I (.\src\inc\bos_common.h)(0x5576B5E2)
+I (.\src\inc\bos_shell.h)(0x55714258)
+I (.\src\inc\bos_mbx.h)(0x5577D7B6)
+F (.\src\bos\kernel\bos_common.c)(0x5577D139)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -I.\src\inc-I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\bos_common.o --omf_browse .\objects\bos_common.crf --depend .\objects\bos_common.d)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdio.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\string.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\MKL46Z4.h)(0x51BFCCC8)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h)(0x53FC3FEA)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\system_MKL46Z4.h)(0x51BFCCC8)
+I (.\src\inc\bos.h)(0x55BC3B60)
+I (.\src\inc\bos_list.h)(0x557113CA)
+I (.\src\inc\bos_common.h)(0x5576B5E2)
+I (.\src\inc\bos_timer.h)(0x55769605)
+I (.\src\inc\bos_shell.h)(0x55714258)
+I (.\src\inc\bos_mbx.h)(0x5577D7B6)
+F (.\src\bos\kernel\bos_event.c)(0x5576B605)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -I.\src\inc-I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\bos_event.o --omf_browse .\objects\bos_event.crf --depend .\objects\bos_event.d)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdio.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\string.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\MKL46Z4.h)(0x51BFCCC8)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h)(0x53FC3FEA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\system_MKL46Z4.h)(0x51BFCCC8)
+I (.\src\inc\bos.h)(0x55BC3B60)
+I (.\src\inc\bos_list.h)(0x557113CA)
+I (.\src\inc\bos_common.h)(0x5576B5E2)
+I (.\src\inc\bos_timer.h)(0x55769605)
+I (.\src\inc\bos_shell.h)(0x55714258)
+I (.\src\inc\bos_mbx.h)(0x5577D7B6)
+F (.\src\bos\kernel\bos_mbx.c)(0x5577D863)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -I.\src\inc-I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\bos_mbx.o --omf_browse .\objects\bos_mbx.crf --depend .\objects\bos_mbx.d)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdlib.h)(0x54760110)
+I (.\src\inc\bos.h)(0x55BC3B60)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdio.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\string.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (.\src\inc\bos_list.h)(0x557113CA)
+I (.\src\inc\bos_common.h)(0x5576B5E2)
+I (.\src\inc\bos_timer.h)(0x55769605)
+I (.\src\inc\bos_shell.h)(0x55714258)
+I (.\src\inc\bos_mbx.h)(0x5577D7B6)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\MKL46Z4.h)(0x51BFCCC8)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h)(0x53FC3FEA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\system_MKL46Z4.h)(0x51BFCCC8)
+F (.\src\bos\util\bos_shell.c)(0x55BC2A7B)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -I.\src\inc-I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\bos_shell.o --omf_browse .\objects\bos_shell.crf --depend .\objects\bos_shell.d)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdio.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdlib.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\string.h)(0x54760110)
+I (.\src\inc\bos.h)(0x55BC3B60)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (.\src\inc\bos_list.h)(0x557113CA)
+I (.\src\inc\bos_common.h)(0x5576B5E2)
+I (.\src\inc\bos_timer.h)(0x55769605)
+I (.\src\inc\bos_shell.h)(0x55714258)
+I (.\src\inc\bos_mbx.h)(0x5577D7B6)
+I (.\src\inc\uart.h)(0x557171F3)
+F (RTE\Device\MKL46Z256xxx4\startup_MKL46Z4.s)(0x5577FD84)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"--pd "__UVISION_VERSION SETA 513" --pd "_RTE_ SETA 1" --pd "MKL46Z256xxx4 SETA 1"--list .\listings\startup_mkl46z4.lst --xref -o .\objects\startup_mkl46z4.o --depend .\objects\startup_mkl46z4.d)
+F (RTE\Device\MKL46Z256xxx4\system_MKL46Z4.c)(0x5559563E)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork -I.\src\inc-I "C:\Program Files (x86)\KeilA\ARM\RV31\Inc"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\FRDM_KL46Z_BOS_V1.4\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\system_mkl46z4.o --omf_browse .\objects\system_mkl46z4.crf --depend .\objects\system_mkl46z4.d)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\MKL46Z4.h)(0x51BFCCC8)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h)(0x53FC3FEA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\system_MKL46Z4.h)(0x51BFCCC8)

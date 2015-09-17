@@ -1,0 +1,12 @@
+--cpu Cortex-M0+
+".\objects\main.o"
+".\objects\seg_lcd.o"
+".\objects\button.o"
+".\objects\pit_tm.o"
+".\objects\led.o"
+".\objects\startup_mkl46z4.o"
+".\objects\system_mkl46z4.o"
+--strict --scatter ".\Objects\Digital_Clock.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Digital_Clock.map" -o .\Objects\Digital_Clock.axf
