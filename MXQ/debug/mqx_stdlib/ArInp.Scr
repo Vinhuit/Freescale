@@ -1,0 +1,18 @@
+--create ..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\mqx_stdlib.lib
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\buf_prv.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\err.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\fclose.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\fflush.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\fopen.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\fp_prv.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\fread.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\fwrite.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\get.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\pos.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\print.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\print_prv.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\put.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\scan.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\scan_prv.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\stdio.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\mqx_stdlib\strings.o

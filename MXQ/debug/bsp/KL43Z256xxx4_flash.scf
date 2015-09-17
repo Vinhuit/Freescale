@@ -1,0 +1,94 @@
+#! armcc -E
+
+#define INTFLASH_END_ADDR       0x00040000
+#define INTFLASH_BASE_ADDR      0x00000000
+#define FLASH_CFM_BASE_ADDR     0x00000400
+#define FLASH_CFM_END_ADDR      0x00000410
+#define INTFLASH_SIZE           (INTFLASH_END_ADDR - INTFLASH_BASE_ADDR - FLASH_CFM_END_ADDR)
+#define FLASHX_SECT_SIZE        (0x0400)
+#define VECTOR_TABLE_SIZE       (0x0200)
+
+#define MY_ALIGN(address, alignment) +(alignment - 1)
+
+LOAD_VECTOR_REGION_INTFLASH INTFLASH_BASE_ADDR VECTOR_TABLE_SIZE
+{
+    VECTORS INTFLASH_BASE_ADDR
+    {
+        vectors.o (.vectors_rom,+FIRST)
+    }
+}
+
+LOAD_CFMCONFIG_REGION_INTFLASH FLASH_CFM_BASE_ADDR (FLASH_CFM_END_ADDR - FLASH_CFM_BASE_ADDR)
+{
+    CFMCONFIG FLASH_CFM_BASE_ADDR
+    {
+        vectors.o (.cfmconfig)
+    }
+}
+
+LOAD_CODE_REGION_INTFLASH FLASH_CFM_END_ADDR INTFLASH_SIZE 
+{
+    CODE FLASH_CFM_END_ADDR
+    {
+        * (InRoot$$Sections)      ; All library sections for example, __main.o,
+                                  ; __scatter*.o, __dc*.o, and * Region$$Table
+        * (KERNEL)
+        * (TEXT)
+        * (+RO)
+    }
+
+    
+    USEDFLASH_END MY_ALIGN(ImageLimit(CODE), FLASHX_SECT_SIZE) EMPTY 0x4
+    {
+    }
+
+    RAM_VECTORS 0x1FFFE000 ; For ram vector table. Used when  MQX_ROM_VECTORS is set to zero.
+    {
+        vectors.o (.vectors_ram)
+    }
+    VECTOR_RAM 0x1FFFE000 OVERLAY ; Not used at all, just a workaround to satisfy SDK
+    { }
+
+    NOUSER +0
+    {
+        * (.nouser)
+    }
+
+    ROUSER +0
+    {
+        * (.rouser)
+    }
+
+    RWUSER +0
+    {
+        * (.rwuser)
+    }
+
+    DATA +0
+    {
+        * (+RW)
+        * (+ZI)
+    }
+
+    USB_BDT MY_ALIGN(ImageLimit(DATA), 512)
+    {
+        * (.usb_bdt)
+    }
+
+    KERNEL_DATA_START MY_ALIGN(ImageLimit(USB_BDT), 0x10)
+    {
+        * (KERNEL_DATA_START)     ; start of kernel data
+    }
+
+    KERNEL_DATA_END 0x20005FF0      ; RAM_END
+    {
+        * (KERNEL_DATA_END)     ; end of kernel data
+    }
+
+    ; mem_init writes a storeblock_struct at the end of kernel data,
+    ; max size 32 bytes, so use 0x100 offset
+    BOOT_STACK_ADDR 0x20005EF0
+    {
+        * (BOOT_STACK)
+    }
+}

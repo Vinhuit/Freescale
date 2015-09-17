@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_projx.xsd">
+
+  <SchemaVersion>2.1</SchemaVersion>
+
+  <Header>### uVision Project, (C) Keil Software</Header>
+
+  <Targets>
+    <Target>
+      <TargetName>watchdog_frdmkl43z48m Int Flash Debug</TargetName>
+      <ToolsetNumber>0x4</ToolsetNumber>
+      <ToolsetName>ARM-ADS</ToolsetName>
+      <TargetOption>
+        <TargetCommonOption>
+          <Device>MKL43Z256xxx4</Device>
+          <Vendor>Freescale</Vendor>
+          <PackID>Keil.Kinetis_KLxx_DFP.1.5.0</PackID>
+          <PackURL>http://www.keil.com/pack/</PackURL>
+          <Cpu>IROM(0x00000000,0x40000) IRAM(0x20000000,0x6000) IRAM2(0x1FFFE000,0x2000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE</Cpu>
+          <FlashUtilSpec></FlashUtilSpec>
+          <StartupFile></StartupFile>
+          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD1FFFE000 -FC8000 -FN1 -FF0MK_P256_48MHZ -FS00 -FL040000($$Device:MKL43Z256xxx4$Flash\MK_P256_48MHZ.FLM))</FlashDriverDll>
+          <DeviceId>6834</DeviceId>
+          <RegisterFile>$$Device:MKL43Z256xxx4$Device\Include\MKL43Z4.h</RegisterFile>
+          <MemoryEnv></MemoryEnv>
+          <Cmp></Cmp>
+          <Asm></Asm>
+          <Linker></Linker>
+          <OHString></OHString>
+          <InfinionOptionDll></InfinionOptionDll>
+          <SLE66CMisc></SLE66CMisc>
+          <SLE66AMisc></SLE66AMisc>
+          <SLE66LinkerMisc></SLE66LinkerMisc>
+          <SFDFile>$$Device:MKL43Z256xxx4$SVD\MKL43Z4.svd</SFDFile>
+          <bCustSvd>0</bCustSvd>
+          <UseEnv>0</UseEnv>
+          <BinPath></BinPath>
+          <IncludePath></IncludePath>
+          <LibPath></LibPath>
+          <RegisterFilePath></RegisterFilePath>
+          <DBRegisterFilePath></DBRegisterFilePath>
+          <TargetStatus>
+            <Error>0</Error>
+            <ExitCodeStop>0</ExitCodeStop>
+            <ButtonStop>0</ButtonStop>
+            <NotGenerated>0</NotGenerated>
+            <InvalidFlash>1</InvalidFlash>
+          </TargetStatus>
+          <OutputDirectory>int flash debug\</OutputDirectory>
+          <OutputName>watchdog.axf</OutputName>
+          <CreateExecutable>1</CreateExecutable>
+          <CreateLib>0</CreateLib>
+          <CreateHexFile>1</CreateHexFile>
+          <DebugInformation>1</DebugInformation>
+          <BrowseInformation>0</BrowseInformation>
+          <ListingPath>.\IntFlashDebug\</ListingPath>
+          <HexFormatSelection>1</HexFormatSelection>
+          <Merge32K>0</Merge32K>
+          <CreateBatchFile>0</CreateBatchFile>
+          <BeforeCompile>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+            <nStopU1X>0</nStopU1X>
+            <nStopU2X>0</nStopU2X>
+          </BeforeCompile>
+          <BeforeMake>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+            <nStopB1X>0</nStopB1X>
+            <nStopB2X>0</nStopB2X>
+          </BeforeMake>
+          <AfterMake>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+          </AfterMake>
+          <SelectedForBatchBuild>0</SelectedForBatchBuild>
+          <SVCSIdString></SVCSIdString>
+        </TargetCommonOption>
+        <CommonProperty>
+          <UseCPPCompiler>0</UseCPPCompiler>
+          <RVCTCodeConst>0</RVCTCodeConst>
+          <RVCTZI>0</RVCTZI>
+          <RVCTOtherData>0</RVCTOtherData>
+          <ModuleSelection>0</ModuleSelection>
+          <IncludeInBuild>1</IncludeInBuild>
+          <AlwaysBuild>0</AlwaysBuild>
+          <GenerateAssemblyFile>0</GenerateAssemblyFile>
+          <AssembleAssemblyFile>0</AssembleAssemblyFile>
+          <PublicsOnly>0</PublicsOnly>
+          <StopOnExitCode>3</StopOnExitCode>
+          <CustomArgument></CustomArgument>
+          <IncludeLibraryModules></IncludeLibraryModules>
+          <ComprImg>1</ComprImg>
+        </CommonProperty>
+        <DllOption>
+          <SimDllName>SARMCM3.DLL</SimDllName>
+          <SimDllArguments></SimDllArguments>
+          <SimDlgDll>DARMCM1.DLL</SimDlgDll>
+          <SimDlgDllArguments>-pCM0+</SimDlgDllArguments>
+          <TargetDllName>SARMCM3.DLL</TargetDllName>
+          <TargetDllArguments></TargetDllArguments>
+          <TargetDlgDll>TARMCM1.DLL</TargetDlgDll>
+          <TargetDlgDllArguments>-pCM0+</TargetDlgDllArguments>
+        </DllOption>
+        <DebugOption>
+          <OPTHX>
+            <HexSelection>1</HexSelection>
+            <HexRangeLowAddress>0</HexRangeLowAddress>
+            <HexRangeHighAddress>0</HexRangeHighAddress>
+            <HexOffset>0</HexOffset>
+            <Oh166RecLen>16</Oh166RecLen>
+          </OPTHX>
+          <Simulator>
+            <UseSimulator>0</UseSimulator>
+            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
+            <RunToMain>1</RunToMain>
+            <RestoreBreakpoints>1</RestoreBreakpoints>
+            <RestoreWatchpoints>1</RestoreWatchpoints>
+            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
+            <RestoreFunctions>1</RestoreFunctions>
+            <RestoreToolbox>1</RestoreToolbox>
+            <LimitSpeedToRealTime>0</LimitSpeedToRealTime>
+            <RestoreSysVw>1</RestoreSysVw>
+          </Simulator>
+          <Target>
+            <UseTarget>1</UseTarget>
+            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
+            <RunToMain>1</RunToMain>
+            <RestoreBreakpoints>1</RestoreBreakpoints>
+            <RestoreWatchpoints>1</RestoreWatchpoints>
+            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
+            <RestoreFunctions>0</RestoreFunctions>
+            <RestoreToolbox>1</RestoreToolbox>
+            <RestoreTracepoints>1</RestoreTracepoints>
+            <RestoreSysVw>1</RestoreSysVw>
+          </Target>
+          <RunDebugAfterBuild>0</RunDebugAfterBuild>
+          <TargetSelection>14</TargetSelection>
+          <SimDlls>
+            <CpuDll></CpuDll>
+            <CpuDllArguments></CpuDllArguments>
+            <PeripheralDll></PeripheralDll>
+            <PeripheralDllArguments></PeripheralDllArguments>
+            <InitializationFile></InitializationFile>
+          </SimDlls>
+          <TargetDlls>
+            <CpuDll></CpuDll>
+            <CpuDllArguments></CpuDllArguments>
+            <PeripheralDll></PeripheralDll>
+            <PeripheralDllArguments></PeripheralDllArguments>
+            <InitializationFile></InitializationFile>
+            <Driver>PEMicro\Pemicro_ArmCortexInterface.dll</Driver>
+          </TargetDlls>
+        </DebugOption>
+        <Utilities>
+          <Flash1>
+            <UseTargetDll>1</UseTargetDll>
+            <UseExternalTool>0</UseExternalTool>
+            <RunIndependent>0</RunIndependent>
+            <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
+            <Capability>1</Capability>
+            <DriverSelection>4103</DriverSelection>
+          </Flash1>
+          <bUseTDR>1</bUseTDR>
+          <Flash2>BIN\UL2CM3.DLL</Flash2>
+          <Flash3></Flash3>
+          <Flash4></Flash4>
+          <pFcarmOut></pFcarmOut>
+          <pFcarmGrp></pFcarmGrp>
+          <pFcArmRoot></pFcArmRoot>
+          <FcArmLst>0</FcArmLst>
+        </Utilities>
+        <TargetArmAds>
+          <ArmAdsMisc>
+            <GenerateListings>0</GenerateListings>
+            <asHll>1</asHll>
+            <asAsm>1</asAsm>
+            <asMacX>1</asMacX>
+            <asSyms>1</asSyms>
+            <asFals>1</asFals>
+            <asDbgD>1</asDbgD>
+            <asForm>1</asForm>
+            <ldLst>0</ldLst>
+            <ldmm>1</ldmm>
+            <ldXref>1</ldXref>
+            <BigEnd>0</BigEnd>
+            <AdsALst>1</AdsALst>
+            <AdsACrf>1</AdsACrf>
+            <AdsANop>0</AdsANop>
+            <AdsANot>0</AdsANot>
+            <AdsLLst>1</AdsLLst>
+            <AdsLmap>1</AdsLmap>
+            <AdsLcgr>1</AdsLcgr>
+            <AdsLsym>1</AdsLsym>
+            <AdsLszi>1</AdsLszi>
+            <AdsLtoi>1</AdsLtoi>
+            <AdsLsun>1</AdsLsun>
+            <AdsLven>1</AdsLven>
+            <AdsLsxf>1</AdsLsxf>
+            <RvctClst>0</RvctClst>
+            <GenPPlst>0</GenPPlst>
+            <AdsCpuType>"Cortex-M0+"</AdsCpuType>
+            <RvctDeviceName></RvctDeviceName>
+            <mOS>0</mOS>
+            <uocRom>0</uocRom>
+            <uocRam>0</uocRam>
+            <hadIROM>1</hadIROM>
+            <hadIRAM>1</hadIRAM>
+            <hadXRAM>0</hadXRAM>
+            <uocXRam>0</uocXRam>
+            <RvdsVP>0</RvdsVP>
+            <hadIRAM2>1</hadIRAM2>
+            <hadIROM2>0</hadIROM2>
+            <StupSel>8</StupSel>
+            <useUlib>0</useUlib>
+            <EndSel>0</EndSel>
+            <uLtcg>0</uLtcg>
+            <RoSelD>3</RoSelD>
+            <RwSelD>3</RwSelD>
+            <CodeSel>0</CodeSel>
+            <OptFeed>0</OptFeed>
+            <NoZi1>0</NoZi1>
+            <NoZi2>0</NoZi2>
+            <NoZi3>0</NoZi3>
+            <NoZi4>0</NoZi4>
+            <NoZi5>0</NoZi5>
+            <Ro1Chk>0</Ro1Chk>
+            <Ro2Chk>0</Ro2Chk>
+            <Ro3Chk>0</Ro3Chk>
+            <Ir1Chk>1</Ir1Chk>
+            <Ir2Chk>0</Ir2Chk>
+            <Ra1Chk>0</Ra1Chk>
+            <Ra2Chk>0</Ra2Chk>
+            <Ra3Chk>0</Ra3Chk>
+            <Im1Chk>1</Im1Chk>
+            <Im2Chk>0</Im2Chk>
+            <OnChipMemories>
+              <Ocm1>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm1>
+              <Ocm2>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm2>
+              <Ocm3>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm3>
+              <Ocm4>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm4>
+              <Ocm5>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm5>
+              <Ocm6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm6>
+              <IRAM>
+                <Type>0</Type>
+                <StartAddress>0x20000000</StartAddress>
+                <Size>0x6000</Size>
+              </IRAM>
+              <IROM>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x40000</Size>
+              </IROM>
+              <XRAM>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </XRAM>
+              <OCR_RVCT1>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT1>
+              <OCR_RVCT2>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT2>
+              <OCR_RVCT3>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT3>
+              <OCR_RVCT4>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x40000</Size>
+              </OCR_RVCT4>
+              <OCR_RVCT5>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT5>
+              <OCR_RVCT6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT6>
+              <OCR_RVCT7>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT7>
+              <OCR_RVCT8>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT8>
+              <OCR_RVCT9>
+                <Type>0</Type>
+                <StartAddress>0x20000000</StartAddress>
+                <Size>0x6000</Size>
+              </OCR_RVCT9>
+              <OCR_RVCT10>
+                <Type>0</Type>
+                <StartAddress>0x1fffe000</StartAddress>
+                <Size>0x2000</Size>
+              </OCR_RVCT10>
+            </OnChipMemories>
+            <RvctStartVector></RvctStartVector>
+          </ArmAdsMisc>
+          <Cads>
+            <interw>1</interw>
+            <Optim>1</Optim>
+            <oTime>0</oTime>
+            <SplitLS>0</SplitLS>
+            <OneElfS>1</OneElfS>
+            <Strict>0</Strict>
+            <EnumInt>0</EnumInt>
+            <PlainCh>0</PlainCh>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <wLevel>0</wLevel>
+            <uThumb>0</uThumb>
+            <uSurpInc>0</uSurpInc>
+            <uC99>0</uC99>
+            <useXO>0</useXO>
+            <VariousControls>
+              <MiscControls>-J../../../../../../../../boards/frdmkl43z48m 
+-J../../../../../../../../platform/CMSIS/Include/device/MKL43Z4 
+-J../../../../../../../../platform/startup/MKL43Z4 
+-J../../../../../../../../platform 
+-J../../../../../../../../platform/CMSIS/Include 
+-J../../../../../../../../platform/CMSIS/Include/device 
+-J../../../../../../../../platform/hal/adc 
+-J../../../../../../../../platform/hal/can 
+-J../../../../../../../../platform/hal/dac 
+-J../../../../../../../../platform/hal/dma 
+-J../../../../../../../../platform/hal/dmamux 
+-J../../../../../../../../platform/hal/dspi 
+-J../../../../../../../../platform/hal/edma 
+-J../../../../../../../../platform/hal/enet 
+-J../../../../../../../../platform/hal/flextimer 
+-J../../../../../../../../platform/hal/gpio 
+-J../../../../../../../../platform/hal/i2c 
+-J../../../../../../../../platform/hal/llwu 
+-J../../../../../../../../platform/hal/lptmr 
+-J../../../../../../../../platform/hal/lpuart 
+-J../../../../../../../../platform/hal/mcg 
+-J../../../../../../../../platform/hal/mpu 
+-J../../../../../../../../platform/hal/osc 
+-J../../../../../../../../platform/hal/pdb 
+-J../../../../../../../../platform/hal/pit 
+-J../../../../../../../../platform/hal/pmc 
+-J../../../../../../../../platform/hal/port 
+-J../../../../../../../../platform/hal/rcm 
+-J../../../../../../../../platform/hal/rtc 
+-J../../../../../../../../platform/hal/sai 
+-J../../../../../../../../platform/hal/sdhc 
+-J../../../../../../../../platform/hal/sim 
+-J../../../../../../../../platform/hal/smc 
+-J../../../../../../../../platform/hal/spi 
+-J../../../../../../../../platform/hal/uart 
+-J../../../../../../../../platform/hal/wdog 
+-J../../../../../../../../platform/drivers/adc 
+-J../../../../../../../../platform/drivers/adc/common 
+-J../../../../../../../../platform/drivers/can 
+-J../../../../../../../../platform/drivers/can/common 
+-J../../../../../../../../platform/drivers/cmp 
+-J../../../../../../../../platform/drivers/cmp/common 
+-J../../../../../../../../platform/drivers/dac 
+-J../../../../../../../../platform/drivers/dac/common 
+-J../../../../../../../../platform/drivers/dma 
+-J../../../../../../../../platform/drivers/dma/common 
+-J../../../../../../../../platform/drivers/dspi/dspi_master 
+-J../../../../../../../../platform/drivers/dspi/dspi_slave 
+-J../../../../../../../../platform/drivers/dspi/common 
+-J../../../../../../../../platform/drivers/edma 
+-J../../../../../../../../platform/drivers/edma/common 
+-J../../../../../../../../platform/drivers/enet 
+-J../../../../../../../../platform/drivers/enet/common 
+-J../../../../../../../../platform/drivers/flash 
+-J../../../../../../../../platform/drivers/flextimer 
+-J../../../../../../../../platform/drivers/flextimer/common 
+-J../../../../../../../../platform/drivers/gpio 
+-J../../../../../../../../platform/drivers/gpio/common 
+-J../../../../../../../../platform/drivers/i2c/i2c_master 
+-J../../../../../../../../platform/drivers/i2c/i2c_slave 
+-J../../../../../../../../platform/drivers/i2c/common 
+-J../../../../../../../../platform/drivers/lptmr 
+-J../../../../../../../../platform/drivers/lptmr/common 
+-J../../../../../../../../platform/drivers/lpuart 
+-J../../../../../../../../platform/drivers/lpuart/common 
+-J../../../../../../../../platform/drivers/mmcau 
+-J../../../../../../../../platform/drivers/mpu 
+-J../../../../../../../../platform/drivers/mpu/common 
+-J../../../../../../../../platform/drivers/pdb 
+-J../../../../../../../../platform/drivers/pdb/common 
+-J../../../../../../../../platform/drivers/pit 
+-J../../../../../../../../platform/drivers/pit/common 
+-J../../../../../../../../platform/drivers/rnga 
+-J../../../../../../../../platform/drivers/rnga/common 
+-J../../../../../../../../platform/drivers/rtc 
+-J../../../../../../../../platform/drivers/rtc/common 
+-J../../../../../../../../platform/drivers/sai 
+-J../../../../../../../../platform/drivers/sai/common 
+-J../../../../../../../../platform/drivers/sdcard 
+-J../../../../../../../../platform/drivers/sdhc 
+-J../../../../../../../../platform/drivers/sdhc/common 
+-J../../../../../../../../platform/drivers/soundcard 
+-J../../../../../../../../platform/drivers/spi 
+-J../../../../../../../../platform/drivers/spi/common 
+-J../../../../../../../../platform/drivers/uart 
+-J../../../../../../../../platform/drivers/uart/common 
+-J../../../../../../../../platform/drivers/wdog 
+-J../../../../../../../../platform/drivers/wdog/common 
+-J../../../../../../../../platform/utilities 
+-J../../../../../../../../rtos 
+-J../../../../../../../../platform/osa 
+-J../../../../../../../../platform/system/interrupt 
+-J../../../../../../../../platform/system/clock 
+-J../../../../../../../../platform/system/hwtimer 
+-J../../../../../../lib/frdmkl43z48m.uv4/debug/config 
+-J../../../../../../lib/frdmkl43z48m.uv4/debug/bsp 
+-J../../../../../../lib/frdmkl43z48m.uv4/debug/psp 
+-J../../../../../../lib/frdmkl43z48m.uv4/debug/mqx_stdlib 
+-J#J 
+--library_interface=none 
+--library_type=standardlib 
+--c99 
+--diag_suppress=1296,186 
+</MiscControls>
+              <Define>CPU_MKL43Z256VLH4=1, FSL_RTOS_MQX=1, _DEBUG=1</Define>
+              <Undefine></Undefine>
+              <IncludePath>../../../../../../../../boards/frdmkl43z48m;../../../../../../../../platform/CMSIS/Include/device/MKL43Z4;../../../../../../../../platform/startup/MKL43Z4;../../../../../../../../platform;../../../../../../../../platform/CMSIS/Include;../../../../../../../../platform/CMSIS/Include/device;../../../../../../../../platform/hal/adc;../../../../../../../../platform/hal/can;../../../../../../../../platform/hal/dac;../../../../../../../../platform/hal/dma;../../../../../../../../platform/hal/dmamux;../../../../../../../../platform/hal/dspi;../../../../../../../../platform/hal/edma;../../../../../../../../platform/hal/enet;../../../../../../../../platform/hal/flextimer;../../../../../../../../platform/hal/gpio;../../../../../../../../platform/hal/i2c;../../../../../../../../platform/hal/llwu;../../../../../../../../platform/hal/lptmr;../../../../../../../../platform/hal/lpuart;../../../../../../../../platform/hal/mcg;../../../../../../../../platform/hal/mpu;../../../../../../../../platform/hal/osc;../../../../../../../../platform/hal/pdb;../../../../../../../../platform/hal/pit;../../../../../../../../platform/hal/pmc;../../../../../../../../platform/hal/port;../../../../../../../../platform/hal/rcm;../../../../../../../../platform/hal/rtc;../../../../../../../../platform/hal/sai;../../../../../../../../platform/hal/sdhc;../../../../../../../../platform/hal/sim;../../../../../../../../platform/hal/smc;../../../../../../../../platform/hal/spi;../../../../../../../../platform/hal/uart;../../../../../../../../platform/hal/wdog;../../../../../../../../platform/drivers/adc;../../../../../../../../platform/drivers/adc/common;../../../../../../../../platform/drivers/can;../../../../../../../../platform/drivers/can/common;../../../../../../../../platform/drivers/cmp;../../../../../../../../platform/drivers/cmp/common;../../../../../../../../platform/drivers/dac;../../../../../../../../platform/drivers/dac/common;../../../../../../../../platform/drivers/dma;../../../../../../../../platform/drivers/dma/common;../../../../../../../../platform/drivers/dspi/dspi_master;../../../../../../../../platform/drivers/dspi/dspi_slave;../../../../../../../../platform/drivers/dspi/common;../../../../../../../../platform/drivers/edma;../../../../../../../../platform/drivers/edma/common;../../../../../../../../platform/drivers/enet;../../../../../../../../platform/drivers/enet/common;../../../../../../../../platform/drivers/flash;../../../../../../../../platform/drivers/flextimer;../../../../../../../../platform/drivers/flextimer/common;../../../../../../../../platform/drivers/gpio;../../../../../../../../platform/drivers/gpio/common;../../../../../../../../platform/drivers/i2c/i2c_master;../../../../../../../../platform/drivers/i2c/i2c_slave;../../../../../../../../platform/drivers/i2c/common;../../../../../../../../platform/drivers/lptmr;../../../../../../../../platform/drivers/lptmr/common;../../../../../../../../platform/drivers/lpuart;../../../../../../../../platform/drivers/lpuart/common;../../../../../../../../platform/drivers/mmcau;../../../../../../../../platform/drivers/mpu;../../../../../../../../platform/drivers/mpu/common;../../../../../../../../platform/drivers/pdb;../../../../../../../../platform/drivers/pdb/common;../../../../../../../../platform/drivers/pit;../../../../../../../../platform/drivers/pit/common;../../../../../../../../platform/drivers/rnga;../../../../../../../../platform/drivers/rnga/common;../../../../../../../../platform/drivers/rtc;../../../../../../../../platform/drivers/rtc/common;../../../../../../../../platform/drivers/sai;../../../../../../../../platform/drivers/sai/common;../../../../../../../../platform/drivers/sdcard;../../../../../../../../platform/drivers/sdhc;../../../../../../../../platform/drivers/sdhc/common;../../../../../../../../platform/drivers/soundcard;../../../../../../../../platform/drivers/spi;../../../../../../../../platform/drivers/spi/common;../../../../../../../../platform/drivers/uart;../../../../../../../../platform/drivers/uart/common;../../../../../../../../platform/drivers/wdog;../../../../../../../../platform/drivers/wdog/common;../../../../../../../../platform/utilities;../../../../../../../../rtos;../../../../../../../../platform/osa;../../../../../../../../platform/system/interrupt;../../../../../../../../platform/system/clock;../../../../../../../../platform/system/hwtimer;../../../../../../lib/frdmkl43z48m.uv4/debug/config;../../../../../../lib/frdmkl43z48m.uv4/debug/bsp;../../../../../../lib/frdmkl43z48m.uv4/debug/psp;../../../../../../lib/frdmkl43z48m.uv4/debug/mqx_stdlib</IncludePath>
+            </VariousControls>
+          </Cads>
+          <Aads>
+            <interw>1</interw>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <thumb>0</thumb>
+            <SplitLS>0</SplitLS>
+            <SwStkChk>0</SwStkChk>
+            <NoWarn>0</NoWarn>
+            <uSurpInc>0</uSurpInc>
+            <useXO>0</useXO>
+            <VariousControls>
+              <MiscControls>--cpreproc 
+</MiscControls>
+              <Define>CPU_MKL43Z256VLH4=1, FSL_RTOS_MQX=1, _DEBUG=1</Define>
+              <Undefine></Undefine>
+              <IncludePath>../../../../../../../../boards/frdmkl43z48m;../../../../../../../../platform/CMSIS/Include/device/MKL43Z4;../../../../../../../../platform/startup/MKL43Z4;../../../../../../lib/frdmkl43z48m.uv4/debug/config;../../../../../../lib/frdmkl43z48m.uv4/debug/bsp;../../../../../../lib/frdmkl43z48m.uv4/debug/psp;../../../../../../lib/frdmkl43z48m.uv4/debug/mqx_stdlib</IncludePath>
+            </VariousControls>
+          </Aads>
+          <LDads>
+            <umfTarg>1</umfTarg>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <noStLib>0</noStLib>
+            <RepFail>1</RepFail>
+            <useFile>0</useFile>
+            <TextAddressRange>0x00000000</TextAddressRange>
+            <DataAddressRange>0x20000000</DataAddressRange>
+            <pXoBase></pXoBase>
+            <ScatterFile>../../../../../../lib/frdmkl43z48m.uv4/debug/bsp/KL43Z256xxx4_flash.scf</ScatterFile>
+            <IncludeLibs></IncludeLibs>
+            <IncludeLibsPath></IncludeLibsPath>
+            <Misc>../../../../../../../../lib/ksdk_mqx_lib/uv4/KL43Z4/debug/ksdk_mqx_lib.lib 
+../../../../../../lib/frdmkl43z48m.uv4/debug/mqx_stdlib/mqx_stdlib.lib 
+../../../../../../lib/frdmkl43z48m.uv4/debug/bsp/bsp.lib 
+../../../../../../lib/frdmkl43z48m.uv4/debug/psp/psp.lib 
+../../../../../../lib/frdmkl43z48m.uv4/debug/bsp/bsp.lib(vectors.o) 
+../../../../../../lib/frdmkl43z48m.uv4/debug/psp/psp.lib(linker_symbols.o) 
+--keep linker_symbols.o(KERNEL_DATA_START) 
+--keep linker_symbols.o(KERNEL_DATA_END) 
+--keep linker_symbols.o(BOOT_STACK) 
+--keep vectors.o(.vectors_rom) 
+--remove 
+--autoat 
+</Misc>
+            <LinkerInputFile></LinkerInputFile>
+            <DisabledWarnings>6314,6314,6329</DisabledWarnings>
+          </LDads>
+        </TargetArmAds>
+      </TargetOption>
+      <Groups>
+        <Group>
+          <GroupName>Sources</GroupName>
+          <Files>
+            <File>
+              <FileName>watchdog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\watchdog.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+      </Groups>
+    </Target>
+    <Target>
+      <TargetName>watchdog_frdmkl43z48m Int Flash Release</TargetName>
+      <ToolsetNumber>0x4</ToolsetNumber>
+      <ToolsetName>ARM-ADS</ToolsetName>
+      <TargetOption>
+        <TargetCommonOption>
+          <Device>MKL43Z256xxx4</Device>
+          <Vendor>Freescale</Vendor>
+          <PackID>Keil.Kinetis_KLxx_DFP.1.5.0</PackID>
+          <PackURL>http://www.keil.com/pack/</PackURL>
+          <Cpu>IROM(0x00000000,0x40000) IRAM(0x20000000,0x6000) IRAM2(0x1FFFE000,0x2000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE</Cpu>
+          <FlashUtilSpec></FlashUtilSpec>
+          <StartupFile></StartupFile>
+          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD1FFFE000 -FC8000 -FN1 -FF0MK_P256_48MHZ -FS00 -FL040000 ($$Device:MKL43Z256xxx4$Flash\MK_P256_48MHZ.flm))</FlashDriverDll>
+          <DeviceId>6834</DeviceId>
+          <RegisterFile>$$Device:MKL43Z256xxx4$Device\Include\MKL43Z4.h</RegisterFile>
+          <MemoryEnv></MemoryEnv>
+          <Cmp></Cmp>
+          <Asm></Asm>
+          <Linker></Linker>
+          <OHString></OHString>
+          <InfinionOptionDll></InfinionOptionDll>
+          <SLE66CMisc></SLE66CMisc>
+          <SLE66AMisc></SLE66AMisc>
+          <SLE66LinkerMisc></SLE66LinkerMisc>
+          <SFDFile>$$Device:MKL43Z256xxx4$SVD\MKL43Z4.svd</SFDFile>
+          <bCustSvd>0</bCustSvd>
+          <UseEnv>0</UseEnv>
+          <BinPath></BinPath>
+          <IncludePath></IncludePath>
+          <LibPath></LibPath>
+          <RegisterFilePath></RegisterFilePath>
+          <DBRegisterFilePath></DBRegisterFilePath>
+          <TargetStatus>
+            <Error>0</Error>
+            <ExitCodeStop>0</ExitCodeStop>
+            <ButtonStop>0</ButtonStop>
+            <NotGenerated>0</NotGenerated>
+            <InvalidFlash>1</InvalidFlash>
+          </TargetStatus>
+          <OutputDirectory>int flash release\</OutputDirectory>
+          <OutputName>watchdog.axf</OutputName>
+          <CreateExecutable>1</CreateExecutable>
+          <CreateLib>0</CreateLib>
+          <CreateHexFile>1</CreateHexFile>
+          <DebugInformation>1</DebugInformation>
+          <BrowseInformation>0</BrowseInformation>
+          <ListingPath>.\IntFlashRelease\</ListingPath>
+          <HexFormatSelection>1</HexFormatSelection>
+          <Merge32K>0</Merge32K>
+          <CreateBatchFile>0</CreateBatchFile>
+          <BeforeCompile>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+            <nStopU1X>0</nStopU1X>
+            <nStopU2X>0</nStopU2X>
+          </BeforeCompile>
+          <BeforeMake>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+            <nStopB1X>0</nStopB1X>
+            <nStopB2X>0</nStopB2X>
+          </BeforeMake>
+          <AfterMake>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+          </AfterMake>
+          <SelectedForBatchBuild>0</SelectedForBatchBuild>
+          <SVCSIdString></SVCSIdString>
+        </TargetCommonOption>
+        <CommonProperty>
+          <UseCPPCompiler>0</UseCPPCompiler>
+          <RVCTCodeConst>0</RVCTCodeConst>
+          <RVCTZI>0</RVCTZI>
+          <RVCTOtherData>0</RVCTOtherData>
+          <ModuleSelection>0</ModuleSelection>
+          <IncludeInBuild>1</IncludeInBuild>
+          <AlwaysBuild>0</AlwaysBuild>
+          <GenerateAssemblyFile>0</GenerateAssemblyFile>
+          <AssembleAssemblyFile>0</AssembleAssemblyFile>
+          <PublicsOnly>0</PublicsOnly>
+          <StopOnExitCode>3</StopOnExitCode>
+          <CustomArgument></CustomArgument>
+          <IncludeLibraryModules></IncludeLibraryModules>
+          <ComprImg>1</ComprImg>
+        </CommonProperty>
+        <DllOption>
+          <SimDllName>SARMCM3.DLL</SimDllName>
+          <SimDllArguments> </SimDllArguments>
+          <SimDlgDll>DARMCM1.DLL</SimDlgDll>
+          <SimDlgDllArguments>-pCM0+</SimDlgDllArguments>
+          <TargetDllName>SARMCM3.DLL</TargetDllName>
+          <TargetDllArguments></TargetDllArguments>
+          <TargetDlgDll>TARMCM1.DLL</TargetDlgDll>
+          <TargetDlgDllArguments>-pCM0+</TargetDlgDllArguments>
+        </DllOption>
+        <DebugOption>
+          <OPTHX>
+            <HexSelection>1</HexSelection>
+            <HexRangeLowAddress>0</HexRangeLowAddress>
+            <HexRangeHighAddress>0</HexRangeHighAddress>
+            <HexOffset>0</HexOffset>
+            <Oh166RecLen>16</Oh166RecLen>
+          </OPTHX>
+          <Simulator>
+            <UseSimulator>0</UseSimulator>
+            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
+            <RunToMain>1</RunToMain>
+            <RestoreBreakpoints>1</RestoreBreakpoints>
+            <RestoreWatchpoints>1</RestoreWatchpoints>
+            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
+            <RestoreFunctions>1</RestoreFunctions>
+            <RestoreToolbox>1</RestoreToolbox>
+            <LimitSpeedToRealTime>0</LimitSpeedToRealTime>
+            <RestoreSysVw>1</RestoreSysVw>
+          </Simulator>
+          <Target>
+            <UseTarget>1</UseTarget>
+            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
+            <RunToMain>1</RunToMain>
+            <RestoreBreakpoints>1</RestoreBreakpoints>
+            <RestoreWatchpoints>1</RestoreWatchpoints>
+            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
+            <RestoreFunctions>0</RestoreFunctions>
+            <RestoreToolbox>1</RestoreToolbox>
+            <RestoreTracepoints>1</RestoreTracepoints>
+            <RestoreSysVw>1</RestoreSysVw>
+          </Target>
+          <RunDebugAfterBuild>0</RunDebugAfterBuild>
+          <TargetSelection>15</TargetSelection>
+          <SimDlls>
+            <CpuDll></CpuDll>
+            <CpuDllArguments></CpuDllArguments>
+            <PeripheralDll></PeripheralDll>
+            <PeripheralDllArguments></PeripheralDllArguments>
+            <InitializationFile></InitializationFile>
+          </SimDlls>
+          <TargetDlls>
+            <CpuDll></CpuDll>
+            <CpuDllArguments></CpuDllArguments>
+            <PeripheralDll></PeripheralDll>
+            <PeripheralDllArguments></PeripheralDllArguments>
+            <InitializationFile></InitializationFile>
+            <Driver>PEMicro\Pemicro_ArmCortexInterface.dll</Driver>
+          </TargetDlls>
+        </DebugOption>
+        <Utilities>
+          <Flash1>
+            <UseTargetDll>1</UseTargetDll>
+            <UseExternalTool>0</UseExternalTool>
+            <RunIndependent>0</RunIndependent>
+            <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
+            <Capability>1</Capability>
+            <DriverSelection>4103</DriverSelection>
+          </Flash1>
+          <bUseTDR>1</bUseTDR>
+          <Flash2>BIN\UL2CM3.DLL</Flash2>
+          <Flash3></Flash3>
+          <Flash4></Flash4>
+          <pFcarmOut></pFcarmOut>
+          <pFcarmGrp></pFcarmGrp>
+          <pFcArmRoot></pFcArmRoot>
+          <FcArmLst>0</FcArmLst>
+        </Utilities>
+        <TargetArmAds>
+          <ArmAdsMisc>
+            <GenerateListings>0</GenerateListings>
+            <asHll>1</asHll>
+            <asAsm>1</asAsm>
+            <asMacX>1</asMacX>
+            <asSyms>1</asSyms>
+            <asFals>1</asFals>
+            <asDbgD>1</asDbgD>
+            <asForm>1</asForm>
+            <ldLst>0</ldLst>
+            <ldmm>1</ldmm>
+            <ldXref>1</ldXref>
+            <BigEnd>0</BigEnd>
+            <AdsALst>1</AdsALst>
+            <AdsACrf>1</AdsACrf>
+            <AdsANop>0</AdsANop>
+            <AdsANot>0</AdsANot>
+            <AdsLLst>1</AdsLLst>
+            <AdsLmap>1</AdsLmap>
+            <AdsLcgr>1</AdsLcgr>
+            <AdsLsym>1</AdsLsym>
+            <AdsLszi>1</AdsLszi>
+            <AdsLtoi>1</AdsLtoi>
+            <AdsLsun>1</AdsLsun>
+            <AdsLven>1</AdsLven>
+            <AdsLsxf>1</AdsLsxf>
+            <RvctClst>0</RvctClst>
+            <GenPPlst>0</GenPPlst>
+            <AdsCpuType>"Cortex-M0+"</AdsCpuType>
+            <RvctDeviceName></RvctDeviceName>
+            <mOS>0</mOS>
+            <uocRom>0</uocRom>
+            <uocRam>0</uocRam>
+            <hadIROM>1</hadIROM>
+            <hadIRAM>1</hadIRAM>
+            <hadXRAM>0</hadXRAM>
+            <uocXRam>0</uocXRam>
+            <RvdsVP>0</RvdsVP>
+            <hadIRAM2>1</hadIRAM2>
+            <hadIROM2>0</hadIROM2>
+            <StupSel>8</StupSel>
+            <useUlib>0</useUlib>
+            <EndSel>0</EndSel>
+            <uLtcg>0</uLtcg>
+            <RoSelD>3</RoSelD>
+            <RwSelD>3</RwSelD>
+            <CodeSel>0</CodeSel>
+            <OptFeed>0</OptFeed>
+            <NoZi1>0</NoZi1>
+            <NoZi2>0</NoZi2>
+            <NoZi3>0</NoZi3>
+            <NoZi4>0</NoZi4>
+            <NoZi5>0</NoZi5>
+            <Ro1Chk>0</Ro1Chk>
+            <Ro2Chk>0</Ro2Chk>
+            <Ro3Chk>0</Ro3Chk>
+            <Ir1Chk>1</Ir1Chk>
+            <Ir2Chk>0</Ir2Chk>
+            <Ra1Chk>0</Ra1Chk>
+            <Ra2Chk>0</Ra2Chk>
+            <Ra3Chk>0</Ra3Chk>
+            <Im1Chk>1</Im1Chk>
+            <Im2Chk>0</Im2Chk>
+            <OnChipMemories>
+              <Ocm1>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm1>
+              <Ocm2>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm2>
+              <Ocm3>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm3>
+              <Ocm4>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm4>
+              <Ocm5>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm5>
+              <Ocm6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm6>
+              <IRAM>
+                <Type>0</Type>
+                <StartAddress>0x20000000</StartAddress>
+                <Size>0x6000</Size>
+              </IRAM>
+              <IROM>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x40000</Size>
+              </IROM>
+              <XRAM>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </XRAM>
+              <OCR_RVCT1>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT1>
+              <OCR_RVCT2>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT2>
+              <OCR_RVCT3>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT3>
+              <OCR_RVCT4>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x40000</Size>
+              </OCR_RVCT4>
+              <OCR_RVCT5>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT5>
+              <OCR_RVCT6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT6>
+              <OCR_RVCT7>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT7>
+              <OCR_RVCT8>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT8>
+              <OCR_RVCT9>
+                <Type>0</Type>
+                <StartAddress>0x20000000</StartAddress>
+                <Size>0x6000</Size>
+              </OCR_RVCT9>
+              <OCR_RVCT10>
+                <Type>0</Type>
+                <StartAddress>0x1fffe000</StartAddress>
+                <Size>0x2000</Size>
+              </OCR_RVCT10>
+            </OnChipMemories>
+            <RvctStartVector></RvctStartVector>
+          </ArmAdsMisc>
+          <Cads>
+            <interw>1</interw>
+            <Optim>4</Optim>
+            <oTime>0</oTime>
+            <SplitLS>0</SplitLS>
+            <OneElfS>1</OneElfS>
+            <Strict>0</Strict>
+            <EnumInt>0</EnumInt>
+            <PlainCh>0</PlainCh>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <wLevel>0</wLevel>
+            <uThumb>0</uThumb>
+            <uSurpInc>0</uSurpInc>
+            <uC99>0</uC99>
+            <useXO>0</useXO>
+            <VariousControls>
+              <MiscControls>-J../../../../../../../../boards/frdmkl43z48m 
+-J../../../../../../../../platform/CMSIS/Include/device/MKL43Z4 
+-J../../../../../../../../platform/startup/MKL43Z4 
+-J../../../../../../../../platform 
+-J../../../../../../../../platform/CMSIS/Include 
+-J../../../../../../../../platform/CMSIS/Include/device 
+-J../../../../../../../../platform/hal/adc 
+-J../../../../../../../../platform/hal/can 
+-J../../../../../../../../platform/hal/dac 
+-J../../../../../../../../platform/hal/dma 
+-J../../../../../../../../platform/hal/dmamux 
+-J../../../../../../../../platform/hal/dspi 
+-J../../../../../../../../platform/hal/edma 
+-J../../../../../../../../platform/hal/enet 
+-J../../../../../../../../platform/hal/flextimer 
+-J../../../../../../../../platform/hal/gpio 
+-J../../../../../../../../platform/hal/i2c 
+-J../../../../../../../../platform/hal/llwu 
+-J../../../../../../../../platform/hal/lptmr 
+-J../../../../../../../../platform/hal/lpuart 
+-J../../../../../../../../platform/hal/mcg 
+-J../../../../../../../../platform/hal/mpu 
+-J../../../../../../../../platform/hal/osc 
+-J../../../../../../../../platform/hal/pdb 
+-J../../../../../../../../platform/hal/pit 
+-J../../../../../../../../platform/hal/pmc 
+-J../../../../../../../../platform/hal/port 
+-J../../../../../../../../platform/hal/rcm 
+-J../../../../../../../../platform/hal/rtc 
+-J../../../../../../../../platform/hal/sai 
+-J../../../../../../../../platform/hal/sdhc 
+-J../../../../../../../../platform/hal/sim 
+-J../../../../../../../../platform/hal/smc 
+-J../../../../../../../../platform/hal/spi 
+-J../../../../../../../../platform/hal/uart 
+-J../../../../../../../../platform/hal/wdog 
+-J../../../../../../../../platform/drivers/adc 
+-J../../../../../../../../platform/drivers/adc/common 
+-J../../../../../../../../platform/drivers/can 
+-J../../../../../../../../platform/drivers/can/common 
+-J../../../../../../../../platform/drivers/cmp 
+-J../../../../../../../../platform/drivers/cmp/common 
+-J../../../../../../../../platform/drivers/dac 
+-J../../../../../../../../platform/drivers/dac/common 
+-J../../../../../../../../platform/drivers/dma 
+-J../../../../../../../../platform/drivers/dma/common 
+-J../../../../../../../../platform/drivers/dspi/dspi_master 
+-J../../../../../../../../platform/drivers/dspi/dspi_slave 
+-J../../../../../../../../platform/drivers/dspi/common 
+-J../../../../../../../../platform/drivers/edma 
+-J../../../../../../../../platform/drivers/edma/common 
+-J../../../../../../../../platform/drivers/enet 
+-J../../../../../../../../platform/drivers/enet/common 
+-J../../../../../../../../platform/drivers/flash 
+-J../../../../../../../../platform/drivers/flextimer 
+-J../../../../../../../../platform/drivers/flextimer/common 
+-J../../../../../../../../platform/drivers/gpio 
+-J../../../../../../../../platform/drivers/gpio/common 
+-J../../../../../../../../platform/drivers/i2c/i2c_master 
+-J../../../../../../../../platform/drivers/i2c/i2c_slave 
+-J../../../../../../../../platform/drivers/i2c/common 
+-J../../../../../../../../platform/drivers/lptmr 
+-J../../../../../../../../platform/drivers/lptmr/common 
+-J../../../../../../../../platform/drivers/lpuart 
+-J../../../../../../../../platform/drivers/lpuart/common 
+-J../../../../../../../../platform/drivers/mmcau 
+-J../../../../../../../../platform/drivers/mpu 
+-J../../../../../../../../platform/drivers/mpu/common 
+-J../../../../../../../../platform/drivers/pdb 
+-J../../../../../../../../platform/drivers/pdb/common 
+-J../../../../../../../../platform/drivers/pit 
+-J../../../../../../../../platform/drivers/pit/common 
+-J../../../../../../../../platform/drivers/rnga 
+-J../../../../../../../../platform/drivers/rnga/common 
+-J../../../../../../../../platform/drivers/rtc 
+-J../../../../../../../../platform/drivers/rtc/common 
+-J../../../../../../../../platform/drivers/sai 
+-J../../../../../../../../platform/drivers/sai/common 
+-J../../../../../../../../platform/drivers/sdcard 
+-J../../../../../../../../platform/drivers/sdhc 
+-J../../../../../../../../platform/drivers/sdhc/common 
+-J../../../../../../../../platform/drivers/soundcard 
+-J../../../../../../../../platform/drivers/spi 
+-J../../../../../../../../platform/drivers/spi/common 
+-J../../../../../../../../platform/drivers/uart 
+-J../../../../../../../../platform/drivers/uart/common 
+-J../../../../../../../../platform/drivers/wdog 
+-J../../../../../../../../platform/drivers/wdog/common 
+-J../../../../../../../../platform/utilities 
+-J../../../../../../../../rtos 
+-J../../../../../../../../platform/osa 
+-J../../../../../../../../platform/system/interrupt 
+-J../../../../../../../../platform/system/clock 
+-J../../../../../../../../platform/system/hwtimer 
+-J../../../../../../lib/frdmkl43z48m.uv4/release/config 
+-J../../../../../../lib/frdmkl43z48m.uv4/release/bsp 
+-J../../../../../../lib/frdmkl43z48m.uv4/release/psp 
+-J../../../../../../lib/frdmkl43z48m.uv4/release/mqx_stdlib 
+-J#J 
+--library_interface=none 
+--library_type=standardlib 
+--c99 
+--diag_suppress=1296,186 
+</MiscControls>
+              <Define>CPU_MKL43Z256VLH4=1, FSL_RTOS_MQX=1, NDEBUG=1</Define>
+              <Undefine></Undefine>
+              <IncludePath>../../../../../../../../boards/frdmkl43z48m;../../../../../../../../platform/CMSIS/Include/device/MKL43Z4;../../../../../../../../platform/startup/MKL43Z4;../../../../../../../../platform;../../../../../../../../platform/CMSIS/Include;../../../../../../../../platform/CMSIS/Include/device;../../../../../../../../platform/hal/adc;../../../../../../../../platform/hal/can;../../../../../../../../platform/hal/dac;../../../../../../../../platform/hal/dma;../../../../../../../../platform/hal/dmamux;../../../../../../../../platform/hal/dspi;../../../../../../../../platform/hal/edma;../../../../../../../../platform/hal/enet;../../../../../../../../platform/hal/flextimer;../../../../../../../../platform/hal/gpio;../../../../../../../../platform/hal/i2c;../../../../../../../../platform/hal/llwu;../../../../../../../../platform/hal/lptmr;../../../../../../../../platform/hal/lpuart;../../../../../../../../platform/hal/mcg;../../../../../../../../platform/hal/mpu;../../../../../../../../platform/hal/osc;../../../../../../../../platform/hal/pdb;../../../../../../../../platform/hal/pit;../../../../../../../../platform/hal/pmc;../../../../../../../../platform/hal/port;../../../../../../../../platform/hal/rcm;../../../../../../../../platform/hal/rtc;../../../../../../../../platform/hal/sai;../../../../../../../../platform/hal/sdhc;../../../../../../../../platform/hal/sim;../../../../../../../../platform/hal/smc;../../../../../../../../platform/hal/spi;../../../../../../../../platform/hal/uart;../../../../../../../../platform/hal/wdog;../../../../../../../../platform/drivers/adc;../../../../../../../../platform/drivers/adc/common;../../../../../../../../platform/drivers/can;../../../../../../../../platform/drivers/can/common;../../../../../../../../platform/drivers/cmp;../../../../../../../../platform/drivers/cmp/common;../../../../../../../../platform/drivers/dac;../../../../../../../../platform/drivers/dac/common;../../../../../../../../platform/drivers/dma;../../../../../../../../platform/drivers/dma/common;../../../../../../../../platform/drivers/dspi/dspi_master;../../../../../../../../platform/drivers/dspi/dspi_slave;../../../../../../../../platform/drivers/dspi/common;../../../../../../../../platform/drivers/edma;../../../../../../../../platform/drivers/edma/common;../../../../../../../../platform/drivers/enet;../../../../../../../../platform/drivers/enet/common;../../../../../../../../platform/drivers/flash;../../../../../../../../platform/drivers/flextimer;../../../../../../../../platform/drivers/flextimer/common;../../../../../../../../platform/drivers/gpio;../../../../../../../../platform/drivers/gpio/common;../../../../../../../../platform/drivers/i2c/i2c_master;../../../../../../../../platform/drivers/i2c/i2c_slave;../../../../../../../../platform/drivers/i2c/common;../../../../../../../../platform/drivers/lptmr;../../../../../../../../platform/drivers/lptmr/common;../../../../../../../../platform/drivers/lpuart;../../../../../../../../platform/drivers/lpuart/common;../../../../../../../../platform/drivers/mmcau;../../../../../../../../platform/drivers/mpu;../../../../../../../../platform/drivers/mpu/common;../../../../../../../../platform/drivers/pdb;../../../../../../../../platform/drivers/pdb/common;../../../../../../../../platform/drivers/pit;../../../../../../../../platform/drivers/pit/common;../../../../../../../../platform/drivers/rnga;../../../../../../../../platform/drivers/rnga/common;../../../../../../../../platform/drivers/rtc;../../../../../../../../platform/drivers/rtc/common;../../../../../../../../platform/drivers/sai;../../../../../../../../platform/drivers/sai/common;../../../../../../../../platform/drivers/sdcard;../../../../../../../../platform/drivers/sdhc;../../../../../../../../platform/drivers/sdhc/common;../../../../../../../../platform/drivers/soundcard;../../../../../../../../platform/drivers/spi;../../../../../../../../platform/drivers/spi/common;../../../../../../../../platform/drivers/uart;../../../../../../../../platform/drivers/uart/common;../../../../../../../../platform/drivers/wdog;../../../../../../../../platform/drivers/wdog/common;../../../../../../../../platform/utilities;../../../../../../../../rtos;../../../../../../../../platform/osa;../../../../../../../../platform/system/interrupt;../../../../../../../../platform/system/clock;../../../../../../../../platform/system/hwtimer;../../../../../../lib/frdmkl43z48m.uv4/release/config;../../../../../../lib/frdmkl43z48m.uv4/release/bsp;../../../../../../lib/frdmkl43z48m.uv4/release/psp;../../../../../../lib/frdmkl43z48m.uv4/release/mqx_stdlib</IncludePath>
+            </VariousControls>
+          </Cads>
+          <Aads>
+            <interw>1</interw>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <thumb>0</thumb>
+            <SplitLS>0</SplitLS>
+            <SwStkChk>0</SwStkChk>
+            <NoWarn>0</NoWarn>
+            <uSurpInc>0</uSurpInc>
+            <useXO>0</useXO>
+            <VariousControls>
+              <MiscControls>--cpreproc 
+</MiscControls>
+              <Define>CPU_MKL43Z256VLH4=1, FSL_RTOS_MQX=1, NDEBUG=1</Define>
+              <Undefine></Undefine>
+              <IncludePath>../../../../../../../../boards/frdmkl43z48m;../../../../../../../../platform/CMSIS/Include/device/MKL43Z4;../../../../../../../../platform/startup/MKL43Z4;../../../../../../lib/frdmkl43z48m.uv4/release/config;../../../../../../lib/frdmkl43z48m.uv4/release/bsp;../../../../../../lib/frdmkl43z48m.uv4/release/psp;../../../../../../lib/frdmkl43z48m.uv4/release/mqx_stdlib</IncludePath>
+            </VariousControls>
+          </Aads>
+          <LDads>
+            <umfTarg>0</umfTarg>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <noStLib>0</noStLib>
+            <RepFail>1</RepFail>
+            <useFile>0</useFile>
+            <TextAddressRange>0x00000000</TextAddressRange>
+            <DataAddressRange>0x20000000</DataAddressRange>
+            <pXoBase></pXoBase>
+            <ScatterFile>../../../../../../lib/frdmkl43z48m.uv4/release/bsp/KL43Z256xxx4_flash.scf</ScatterFile>
+            <IncludeLibs></IncludeLibs>
+            <IncludeLibsPath></IncludeLibsPath>
+            <Misc>../../../../../../../../lib/ksdk_mqx_lib/uv4/KL43Z4/release/ksdk_mqx_lib.lib 
+../../../../../../lib/frdmkl43z48m.uv4/release/mqx_stdlib/mqx_stdlib.lib 
+../../../../../../lib/frdmkl43z48m.uv4/release/bsp/bsp.lib 
+../../../../../../lib/frdmkl43z48m.uv4/release/psp/psp.lib 
+../../../../../../lib/frdmkl43z48m.uv4/release/bsp/bsp.lib(vectors.o) 
+../../../../../../lib/frdmkl43z48m.uv4/release/psp/psp.lib(linker_symbols.o) 
+--keep linker_symbols.o(KERNEL_DATA_START) 
+--keep linker_symbols.o(KERNEL_DATA_END) 
+--keep linker_symbols.o(BOOT_STACK) 
+--keep vectors.o(.vectors_rom) 
+--remove 
+--autoat 
+</Misc>
+            <LinkerInputFile></LinkerInputFile>
+            <DisabledWarnings>6314,6329</DisabledWarnings>
+          </LDads>
+        </TargetArmAds>
+      </TargetOption>
+      <Groups>
+        <Group>
+          <GroupName>Sources</GroupName>
+          <Files>
+            <File>
+              <FileName>watchdog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\watchdog.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+      </Groups>
+    </Target>
+  </Targets>
+
+</Project>

@@ -1,0 +1,33 @@
+Dependencies for Project 'mxq2', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Sources\main.c)(0x55BF4C00)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections -I ".\MQXLITE\include" -I ".\MQXLITE\config" -I ".\MQXLITE\kernel" -I ".\MQXLITE\psp\cortex_m" -I ".\MQXLITE\psp\cortex_m\core\M0" -I ".\MQXLITE\psp\cortex_m\compiler\rv" -I ".\PDD" -I ".\Static_Code\IO_Map" -I ".\Sources" -I ".\Generated_Code" -I ".\Generated_Code" -I ".\MQXLITE\config" -I ".\MQXLITE\kernel" -I ".\MQXLITE\psp\cortex_m" -I ".\Project_Settings\Startup_Code" -I ".\Sources" -I ".\MQXLITE\psp\cortex_m\core\M0"-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\mxq2\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include"-I "C:\Program Files (x86)\KeilA\ARM\CMSIS\Include"-D__UVISION_VERSION="513" -DMKL46Z256xxx4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Generated_Code\Cpu.h)(0x55BCF146)
+I (.\Generated_Code\PE_Types.h)(0x55BCF146)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (.\Generated_Code\PE_Error.h)(0x55BCF146)
+I (.\Generated_Code\PE_Const.h)(0x55BCF146)
+I (.\Generated_Code\IO_Map.h)(0x55BCF146)
+I (.\Static_Code\IO_Map\MKL46Z4.h)(0x55BCF141)
+I (Sources\mqx_tasks.h)(0x55BCF144)
+I (.\Generated_Code\MQX1.h)(0x55BCF146)
+I (.\Generated_Code\SystemTimer1.h)(0x55BCF146)
+I (.\PDD\SysTick_PDD.h)(0x55BF4AE5)
+I (.\PDD\PDD_Types.h)(0x55BF4A8E)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdio.h)(0x54760110)
+I (.\MQXLITE\config\task_template_list.h)(0x55BCF144)
+I (.\MQXLITE\include\mqxlite.h)(0x55BCF144)
+I (.\MQXLITE\include\mqx_cnfg.h)(0x55BCF144)
+I (.\MQXLITE\config\user_config.h)(0x55BCF144)
+I (.\MQXLITE\include\mqxlite_cnfg.h)(0x55BCF144)
+I (.\MQXLITE\psp\cortex_m\psptypes.h)(0x55BCF143)
+I (.\MQXLITE\psp\cortex_m\psp_supp.h)(0x55BCF143)
+I (.\MQXLITE\include\mqx_macros.h)(0x55BCF144)
+I (.\MQXLITE\include\queue.h)(0x55BCF144)
+I (.\MQXLITE\include\lwsem.h)(0x55BCF144)
+I (.\MQXLITE\psp\cortex_m\psp_cpu.h)(0x55BCF143)
+I (.\MQXLITE\psp\cortex_m\psp_cpudef.h)(0x55BCF143)
+I (.\MQXLITE\include\mqx_cpudef.h)(0x55BCF144)
+I (.\MQXLITE\psp\cortex_m\kinetis.h)(0x55BCF143)
+I (.\MQXLITE\psp\cortex_m\cortex.h)(0x55BCF143)
+I (.\MQXLITE\include\mqxlite_prv.h)(0x55BCF144)
+I (.\Generated_Code\CsIO1.h)(0x55BCF146)
+I (.\Generated_Code\IO1.h)(0x55BCF146)

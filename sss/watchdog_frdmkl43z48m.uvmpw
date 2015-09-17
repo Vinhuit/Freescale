@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ProjectWorkspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_mpw.xsd">
+  <SchemaVersion>1.0</SchemaVersion>
+  <Header>### uVision Project, (C) Keil Software</Header>
+  <WorkspaceName>WorkSpace</WorkspaceName>
+<project><PathAndName>watchdog_frdmkl43z48m.uvproj</PathAndName><NodeIsActive>0</NodeIsActive></project><project><PathAndName>..\..\..\..\..\build\uv4\bsp_frdmkl43z48m\bsp_frdmkl43z48m.uvproj</PathAndName><NodeIsActive>0</NodeIsActive></project><project><PathAndName>..\..\..\..\..\build\uv4\psp_frdmkl43z48m\psp_frdmkl43z48m.uvproj</PathAndName><NodeIsActive>0</NodeIsActive></project><project><PathAndName>..\..\..\..\..\..\mqx_stdlib\build\uv4\mqx_stdlib_frdmkl43z48m\mqx_stdlib_frdmkl43z48m.uvproj</PathAndName><NodeIsActive>0</NodeIsActive></project></ProjectWorkspace>

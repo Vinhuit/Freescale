@@ -1,0 +1,34 @@
+.\main.o: main.c
+.\main.o: .\Static_Code\IO_Map\MKL46Z4.h
+.\main.o: C:\Program Files (x86)\KeilA\ARM\ARMCC\Bin\..\include\stdint.h
+.\main.o: .\Generated_Code\Cpu.h
+.\main.o: .\Generated_Code\PE_Types.h
+.\main.o: .\Generated_Code\PE_Error.h
+.\main.o: .\Generated_Code\PE_Const.h
+.\main.o: .\Generated_Code\IO_Map.h
+.\main.o: .\Static_Code\IO_Map\MKL46Z4.h
+.\main.o: .\Sources\Events.h
+.\main.o: .\Generated_Code\MQX1.h
+.\main.o: .\Generated_Code\SystemTimer1.h
+.\main.o: .\Static_Code\PDD\SysTick_PDD.h
+.\main.o: .\Static_Code\PDD\PDD_Types.h
+.\main.o: .\MQXLITE\config\task_template_list.h
+.\main.o: .\MQXLITE\include\mqxlite.h
+.\main.o: .\MQXLITE\include\mqx_cnfg.h
+.\main.o: .\MQXLITE\config\user_config.h
+.\main.o: .\MQXLITE\include\mqxlite_cnfg.h
+.\main.o: .\MQXLITE\psp\cortex_m\psptypes.h
+.\main.o: .\MQXLITE\psp\cortex_m\psp_supp.h
+.\main.o: .\MQXLITE\include\mqx_macros.h
+.\main.o: .\MQXLITE\include\queue.h
+.\main.o: .\MQXLITE\include\lwsem.h
+.\main.o: .\MQXLITE\psp\cortex_m\psp_cpu.h
+.\main.o: .\MQXLITE\psp\cortex_m\psp_cpudef.h
+.\main.o: .\MQXLITE\include\mqx_cpudef.h
+.\main.o: .\MQXLITE\psp\cortex_m\kinetis.h
+.\main.o: .\MQXLITE\psp\cortex_m\cortex.h
+.\main.o: .\MQXLITE\include\mqxlite_prv.h
+.\main.o: .\Generated_Code\CsIO1.h
+.\main.o: C:\Program Files (x86)\KeilA\ARM\ARMCC\Bin\..\include\stdio.h
+.\main.o: .\Generated_Code\IO1.h
+.\main.o: .\Sources\mqx_tasks.h

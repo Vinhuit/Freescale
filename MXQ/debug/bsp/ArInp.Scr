@@ -1,0 +1,20 @@
+--create ..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\bsp.lib
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\vectors.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\init_hardware.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\init_bsp.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\init_nio_serial.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\mqx_init.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\mqx_main.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\nio_dummy.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\nio_mem.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\nio_null.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\nio_pipe.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\fsl_uart_irq.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\fsl_lpuart_irq.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\nio_serial.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\nio_tfs.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\nio_tty.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\gpio_pins.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\pin_mux.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\hardware_init.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\bsp\system_mkl43z4.o

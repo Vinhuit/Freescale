@@ -1,0 +1,25 @@
+Dependencies for Project 'rtos', Target 'Target 1': (DO NOT MODIFY !)
+F (.\main.c)(0x55B4EB70)(-c --cpu Cortex-M0+ -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\rtos\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS_RTX\INC"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (osObjects.h)(0x51AD8520)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS_RTX\INC\cmsis_os.h)(0x541FA946)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stddef.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include\MKL46Z4.h)(0x51BFCCC8)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h)(0x53FC3FEA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include\system_MKL46Z4.h)(0x51BFCCC8)
+F (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS_RTX\LIB\ARM\RTX_CM0.lib)(0x541FA946)()
+F (RTE\CMSIS\RTX_Conf_CM.c)(0x54116D42)(-c --cpu Cortex-M0+ -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\rtos\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS_RTX\INC"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\rtx_conf_cm.o --omf_browse .\objects\rtx_conf_cm.crf --depend .\objects\rtx_conf_cm.d)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS_RTX\INC\cmsis_os.h)(0x541FA946)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stddef.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS_RTX\INC\RTX_CM_lib.h)(0x541FA946)
+F (RTE\Device\MKL46Z256xxx4\startup_MKL46Z4.s)(0x51BFCCC8)(--cpu Cortex-M0+ --pd "__RTX SETA 1" --pd "__EVAL SETA 1" -g --apcs=interwork -I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\rtos\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS_RTX\INC"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include"--pd "__UVISION_VERSION SETA 513" --pd "_RTE_ SETA 1" --pd "MKL46Z256xxx4 SETA 1"--list .\listings\startup_mkl46z4.lst --xref -o .\objects\startup_mkl46z4.o --depend .\objects\startup_mkl46z4.d)
+F (RTE\Device\MKL46Z256xxx4\system_MKL46Z4.c)(0x51BFCCC8)(-c --cpu Cortex-M0+ -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections-I "D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\rtos\RTE"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I "C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS_RTX\INC"-I "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include"-D__UVISION_VERSION="513" -D_RTE_ -DMKL46Z256xxx4-o .\objects\system_mkl46z4.o --omf_browse .\objects\system_mkl46z4.crf --depend .\objects\system_mkl46z4.d)
+I (C:\Program Files (x86)\KeilA\ARM\ARMCC\include\stdint.h)(0x54760110)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include\MKL46Z4.h)(0x51BFCCC8)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h)(0x53FC3FEA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FF00BA)
+I (C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include\system_MKL46Z4.h)(0x51BFCCC8)

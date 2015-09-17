@@ -1,0 +1,259 @@
+reg32_write(addr, val)
+{
+    __writeMemory32(val, addr, "Memory");
+}
+
+
+reg32_read(addr)
+{
+    return __readMemory32(addr, "Memory");
+}
+
+clock_init()
+{
+    // select pll as system clock
+    reg32_write(0x4006b02c, 0x78); // power up fxosc
+    // wait ((data.long(0x4006b004))&0x20)==0x20 #wait for fxosc to lock
+    while ((reg32_read(0x4006b004) & 0x00000020) != 0x00000020) {}
+    reg32_write(0x4006b008, 0x20); // set fxosc as fast clock
+
+    // enable all clocks gates from ccm
+    reg32_write(0x4006b040, 0xffffffff);
+    reg32_write(0x4006b044, 0xffffffff);
+    reg32_write(0x4006b048, 0xffffffff);
+    reg32_write(0x4006b04c, 0xffffffff);
+    reg32_write(0x4006b050, 0xffffffff);
+    reg32_write(0x4006b054, 0xffffffff);
+    reg32_write(0x4006b058, 0xffffffff);
+    reg32_write(0x4006b05c, 0xffffffff);
+    reg32_write(0x4006b060, 0xffffffff);
+    reg32_write(0x4006b064, 0xffffffff);
+    reg32_write(0x4006b068, 0xffffffff);
+    reg32_write(0x4006b06c, 0xffffffff);
+
+    reg32_write(0x40050270, 0x2001); // pll1
+    // wait ((data.long(0x40050270))&0x80000000)==0x80000000 #wait for lock
+    while ((reg32_read(0x40050270) & 0x80000000) != 0x80000000) {}
+
+    reg32_write(0x40050030, 0x2001); // pll2
+    // wait ((data.long(0x40050030))&0x80000000)==0x80000000 #wait for lock
+    while ((reg32_read(0x40050030) & 0x80000000) != 0x80000000) {}
+
+    reg32_write(0x40050010, 0x3040);  // pll3
+    // wait ((data.long(0x40050010))&0x80000000)==0x80000000 #wait for lock
+    while ((reg32_read(0x40050010) & 0x80000000) != 0x80000000) {}
+
+    reg32_write(0x40050070, 0x00002031);  // anadig_pll_audio_ctrl: pll4
+    while ((reg32_read(0x40050070) & 0x80000000) != 0x80000000) {}
+
+    reg32_write(0x400500e0, 0x00002001);  // anadig_pll_enet_ctrl: pll5
+    while ((reg32_read(0x400500e0) & 0x80000000) != 0x80000000) {}
+
+    reg32_write(0x400500a0, 0x00002028);  // anadig_pll_video_ctrl: pll6
+    while ((reg32_read(0x400500a0) & 0x80000000) != 0x80000000) {}
+
+    // enable all pfds sources and set sysclk as pll1 pfd3 for 396mhz
+    reg32_write(0x4006b000, 0x00010005); // ccm_ccr: firc_en=1 and oscnt=5
+    reg32_write(0x4006b008, 0x0003ff24); // ccm_ccsr: pll1 uses pll1_pfd3, enable all pll1 and pll2, select fast clock, and sys_clock_sel use pll1
+    reg32_write(0x4006b00c, 0x00000850); // ccm_cacrr: arm_div=0 (div by 1), bus_div=2 (div by 3), ipg_div value is 1 (div by 2), pll4 value is 1 (div 4)
+}
+ddr_iomuxc()
+{
+    reg32_write(0x4004821c, 0x00000140);
+    reg32_write(0x40048220, 0x00000140);
+    reg32_write(0x40048224, 0x00000140);
+    reg32_write(0x40048228, 0x00000140);
+    reg32_write(0x4004822c, 0x00000140);
+    reg32_write(0x40048230, 0x00000140);
+    reg32_write(0x40048234, 0x00000140);
+    reg32_write(0x40048238, 0x00000140);
+    reg32_write(0x4004823c, 0x00000140);
+    reg32_write(0x40048240, 0x00000140);
+    reg32_write(0x40048244, 0x00000140);
+    reg32_write(0x40048248, 0x00000140);
+    reg32_write(0x4004824c, 0x00000140);
+    reg32_write(0x40048250, 0x00000140);
+    reg32_write(0x40048254, 0x00000140);
+    reg32_write(0x40048258, 0x00000140);
+    reg32_write(0x4004825c, 0x00000140);
+    reg32_write(0x40048260, 0x00000140);
+    reg32_write(0x40048264, 0x00000140);
+    reg32_write(0x40048268, 0x00000140);
+    reg32_write(0x4004826c, 0x00000140);
+    reg32_write(0x40048270, 0x00000140);
+    reg32_write(0x40048274, 0x00010140);
+    reg32_write(0x40048278, 0x00000140);
+    reg32_write(0x4004827c, 0x00000140);
+    reg32_write(0x40048280, 0x00000140);
+    reg32_write(0x40048284, 0x00000140);
+    reg32_write(0x40048288, 0x00000140);
+    reg32_write(0x4004828c, 0x00000140);
+    reg32_write(0x40048290, 0x00000140);
+    reg32_write(0x40048294, 0x00000140);
+    reg32_write(0x40048298, 0x00000140);
+    reg32_write(0x4004829c, 0x00000140);
+    reg32_write(0x400482a0, 0x00000140);
+    reg32_write(0x400482a4, 0x00000140);
+    reg32_write(0x400482a8, 0x00000140);
+    reg32_write(0x400482ac, 0x00000140);
+    reg32_write(0x400482b0, 0x00000140);
+    reg32_write(0x400482b4, 0x00000140);
+    reg32_write(0x400482b8, 0x00000140);
+    reg32_write(0x400482bc, 0x00000140);
+    reg32_write(0x400482c0, 0x00000140);
+    reg32_write(0x400482c4, 0x00010140);
+    reg32_write(0x400482c8, 0x00010140);
+    reg32_write(0x400482cc, 0x00000140);
+    reg32_write(0x400482d0, 0x00000140);
+    reg32_write(0x400482d4, 0x00000140);
+    reg32_write(0x400482d8, 0x00000140);
+    reg32_write(0x400482dc, 0x00000140);
+    reg32_write(0x400482e0, 0x00000140);
+}
+
+
+ddr_phy_init2()
+{
+    reg32_write(0x400ae400, 0x00002613);		//DDR_PHY000
+    reg32_write(0x400ae440, 0x00002613);		//DDR_PHY016
+
+    reg32_write(0x400ae404, 0x00002615);		//DDR_PHY001
+    reg32_write(0x400ae444, 0x00002615);		//DDR_PHY017
+    
+    reg32_write(0x400ae408, 0x00210000);		//DDR_PHY002
+    reg32_write(0x400ae448, 0x00210000);		//DDR_PHY018
+    reg32_write(0x400ae488, 0x00210000);		//DDR_PHY034
+    
+    reg32_write(0x400ae40c, 0x0001012a);		//DDR_PHY003
+    reg32_write(0x400ae44c, 0x0001012a);		//DDR_PHY019
+    reg32_write(0x400ae48c, 0x0001012a);		//DDR_PHY035
+    
+
+    reg32_write(0x400ae410, 0x00002400);		//DDR_PHY004
+    reg32_write(0x400ae450, 0x00002400);		//DDR_PHY020
+    reg32_write(0x400ae490, 0x00002400);		//DDR_PHY036
+    
+
+	reg32_write(0x400ae4c4, 0x00000000);		//DDR_PHY049
+    reg32_write(0x400ae4c8, 0x00001100);		//DDR_PHY050
+	reg32_write(0x400ae4d0, 0x00010101);		//DDR_PHY052
+}
+
+
+
+ddr_init()
+{
+    reg32_write(0x400ae000, 0x00000600);		//DDR_CR000
+    reg32_write(0x400ae008, 0x00000020);		//DDR_CR002
+    reg32_write(0x400ae028, 0x00013880);		//DDR_CR010
+    reg32_write(0x400ae02c, 0x00030D40);		//DDR_CR011
+    reg32_write(0x400ae030, 0x0000050c);		//DDR_CR012
+    reg32_write(0x400ae034, 0x15040400);		//DDR_CR013
+    reg32_write(0x400ae038, 0x1406040F);		//DDR_CR014
+    reg32_write(0x400ae040, 0x04040000);		//DDR_CR016
+    reg32_write(0x400ae044, 0x006DB00C);		//DDR_CR017
+    reg32_write(0x400ae048, 0x00000403);		//DDR_CR018
+    reg32_write(0x400ae050, 0x01000000);		//DDR_CR020
+    reg32_write(0x400ae054, 0x00060001);		//DDR_CR021
+    reg32_write(0x400ae058, 0x000C0000);		//DDR_CR022
+    reg32_write(0x400ae05c, 0x03000200);		//DDR_CR023
+    reg32_write(0x400ae060, 0x00000006);		//DDR_CR024
+    reg32_write(0x400ae064, 0x00010000);		//DDR_CR025
+    reg32_write(0x400ae068, 0x0C30002C);		//DDR_CR026
+    reg32_write(0x400ae070, 0x00000000);		//DDR_CR028
+    reg32_write(0x400ae074, 0x00000003);		//DDR_CR029
+    reg32_write(0x400ae078, 0x0000000a);		//DDR_CR030
+    reg32_write(0x400ae07c, 0x003001D4);		//DDR_CR031
+    reg32_write(0x400ae084, 0x00010000);		//DDR_CR033
+    reg32_write(0x400ae088, 0x00050500);		//DDR_CR034
+    reg32_write(0x400ae098, 0x00000000);		//DDR_CR038
+    reg32_write(0x400ae09c, 0x04001002);		//DDR_CR039
+    reg32_write(0x400ae0a4, 0x00000001);		//DDR_CR041
+    reg32_write(0x400ae0b4, 0x00000000);		//DDR_CR045
+    reg32_write(0x400ae0b8, 0x00000000);		//DDR_CR046
+    reg32_write(0x400ae0bc, 0x00000000);		//DDR_CR047
+    reg32_write(0x400ae0c0, 0x00460420);		//DDR_CR048
+    reg32_write(0x400ae0c4, 0x00000000);		//DDR_CR049
+    reg32_write(0x400ae0cc, 0x00000000);		//DDR_CR051
+    reg32_write(0x400ae0e4, 0x00000000);		//DDR_CR057
+    reg32_write(0x400ae108, 0x01000200);		//DDR_CR066
+    reg32_write(0x400ae10c, 0x00000040);		//DDR_CR067
+    reg32_write(0x400ae114, 0x00000200);		//DDR_CR069
+    reg32_write(0x400ae118, 0x00000040);		//DDR_CR070
+    reg32_write(0x400ae11c, 0x00000000);		//DDR_CR071
+    reg32_write(0x400ae120, 0x00000000);		//DDR_CR072
+    reg32_write(0x400ae124, 0x0a010300);		//DDR_CR073
+    reg32_write(0x400ae128, 0x01014040);		//DDR_CR074
+    reg32_write(0x400ae12c, 0x01010101);		//DDR_CR075
+    reg32_write(0x400ae130, 0x03030101);		//DDR_CR076
+    reg32_write(0x400ae134, 0x01000101);		//DDR_CR077
+    reg32_write(0x400ae138, 0x0700000C);		//DDR_CR078
+    reg32_write(0x400ae13c, 0x00000000);		//DDR_CR079
+	reg32_write(0x400ae148, 0x10000000);		//DDR_CR082
+    reg32_write(0x400ae15c, 0x01000000);		//DDR_CR087
+    reg32_write(0x400ae160, 0x00040000);		//DDR_CR088
+    reg32_write(0x400ae164, 0x00000002);		//DDR_CR089
+    reg32_write(0x400ae16c, 0x00020000);		//DDR_CR091
+    reg32_write(0x400ae170, 0x00000000);		//DDR_CR092
+    reg32_write(0x400ae180, 0x00002819);		//DDR_CR096
+	reg32_write(0x400ae184, 0x01000000);		//DDR_CR097
+	reg32_write(0x400ae188, 0x00000000);		//DDR_CR098
+	reg32_write(0x400ae18C, 0x00000000);		//DDR_CR099
+	reg32_write(0x400ae198, 0x00000000);		//DDR_CR102
+    reg32_write(0x400ae1a4, 0x00001800);		//DDR_CR105
+    reg32_write(0x400ae1a8, 0x00000000);		//DDR_CR106
+    reg32_write(0x400ae1b8, 0x00000018);		//DDR_CR110
+    reg32_write(0x400ae1c8, 0x00000000);		//DDR_CR114
+    reg32_write(0x400ae1cc, 0x00000000);		//DDR_CR115
+    reg32_write(0x400ae1d4, 0x00000000);		//DDR_CR117
+    reg32_write(0x400ae1d8, 0x01010000);		//DDR_CR118
+    reg32_write(0x400ae1dc, 0x00000000);		//DDR_CR119
+    reg32_write(0x400ae1e0, 0x02020000);		//DDR_CR120
+    reg32_write(0x400ae1e4, 0x00000202);		//DDR_CR121
+    reg32_write(0x400ae1e8, 0x01010064);		//DDR_CR122
+    reg32_write(0x400ae1ec, 0x00010101);		//DDR_CR123
+    reg32_write(0x400ae1f0, 0x00000064);		//DDR_CR124
+    reg32_write(0x400ae1f4, 0x00000000);		//DDR_CR125
+    reg32_write(0x400ae1f8, 0x00000800);		//DDR_CR126
+    reg32_write(0x400ae1fc, 0x00000000);		//DDR_CR127
+    reg32_write(0x400ae20c, 0x00000000);		//DDR_CR131
+    reg32_write(0x400ae210, 0x00000506);		//DDR_CR132
+    reg32_write(0x400ae224, 0x00020000);		//DDR_CR137
+	reg32_write(0x400ae228, 0x01000100);		//DDR_CR138
+    reg32_write(0x400ae22c, 0x04070303);		//DDR_CR139
+	reg32_write(0x400ae230, 0x00000040);		//DDR_CR140
+	reg32_write(0x400ae23C, 0x06000080);		//DDR_CR143
+	reg32_write(0x400ae240, 0x04070303);		//DDR_CR144
+	reg32_write(0x400ae244, 0x00000040);		//DDR_CR145
+	reg32_write(0x400ae248, 0x00000040);		//DDR_CR146
+	reg32_write(0x400ae24C, 0x000F0000);		//DDR_CR147
+	reg32_write(0x400ae250, 0x000F0000);		//DDR_CR148
+	reg32_write(0x400ae25C, 0x00000101);		//DDR_CR151
+	
+    reg32_write(0x400ae268, 0x682C4000);		//DDR_CR154
+    reg32_write(0x400ae26c, 0x00000012);		//DDR_CR155
+    reg32_write(0x400ae278, 0x00000006);		//DDR_CR158
+    reg32_write(0x400ae284, 0x00010202);		//DDR_CR161
+
+    __delay(100);
+    ddr_phy_init2();
+
+    reg32_write(0x400ae000, 0x00000601);		//DDR_CR000
+    __delay(100);
+	
+	reg32_write(0x400ae114, 0x00000200);		//DDR_CR069
+	__delay(100);
+}
+
+
+execUserPreload()
+{
+    clock_init();
+    ddr_iomuxc();
+    __delay(100);
+    ddr_init();
+}
+
+    
+
+

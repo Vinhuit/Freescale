@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.13.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Vinh huynh, CNTT, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.13.0.0
+Toolchain Path:  C:\Program Files (x86)\KeilA\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.13.0.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      PEMicro\Pemicro_ArmCortexInterface.dll V1.11
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\Timer_kl46z\Timer_KL46z.uvprojx
+Project File Date:  07/16/2015
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling Main.c...
+MemMapPtr_KL46Z4.h(66): warning:  #47-D: incompatible redefinition of macro "MCU_MEM_MAP_VERSION_MINOR" (declared at line 56 of "C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include\MKL46Z4.h")
+  #define MCU_MEM_MAP_VERSION_MINOR 0x0000u
+Main.c(90): warning:  #188-D: enumerated type mixed with another type
+                NVIC_EnableIRQ(17);
+Main.c(150): warning:  #177-D: variable "CB" was declared but never referenced
+        unsigned char CB = 0x00;
+Main.c(62): warning:  #177-D: function "Get_Button" was declared but never referenced
+  static int Get_Button(uint32_t key){
+Main.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=2096 RO-data=240 RW-data=20 ZI-data=356  
+".\Objects\Timer_KL46z.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.5.0.pack
+                Keil::Device:Startup:1.0.0
+                Freescale Kinetis KLxx Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\Timer_kl46z\RTE
+  C:\Program Files (x86)\KeilA\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  C:\Program Files (x86)\KeilA\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.5.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\system_MKL46Z4.c
+      Source file:   Device\Source\ARM\startup_MKL46Z4.s
+</pre>
+</body>
+</html>

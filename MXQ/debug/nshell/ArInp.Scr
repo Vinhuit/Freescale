@@ -1,0 +1,11 @@
+--create ..\..\..\..\lib\frdmkl43z48m.uv4\debug\nshell\nshell.lib
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\nshell\sh_abort.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\nshell\sh_kill.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\nshell\sh_pause.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\nshell\sh_tad.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\nshell\sh_cmdlist.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\nshell\sh_exit.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\nshell\sh_help.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\nshell\sh_sh.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\nshell\sh_util.o
+..\..\..\..\lib\frdmkl43z48m.uv4\debug\nshell\shell.o

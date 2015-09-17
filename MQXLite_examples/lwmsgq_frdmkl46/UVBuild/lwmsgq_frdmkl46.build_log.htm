@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.13.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Vinh huynh, CNTT, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.13.0.0
+Toolchain Path:  C:\Program Files (x86)\KeilA\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.13.0.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.11.0
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+D:\Hoc Tap\nam23\Embedded_System_Programming\Silde\freescale\MQXLite_examples\lwmsgq_frdmkl46\lwmsgq_frdmkl46.uvproj
+Project File Date:  08/03/2015
+
+<h2>Output:</h2>
+Build target 'MKL46Z256xxx4'
+compiling mqx_tasks.c...
+Sources\mqx_tasks.c(113): warning:  #170-D: pointer points outside of underlying object
+        msg[0] = ('A'+ "index");
+Sources\mqx_tasks.c(113): error:  #513: a value of type "char *" cannot be assigned to an entity of type "uint32_t"
+        msg[0] = ('A'+ "index");
+Sources\mqx_tasks.c(115): error:  #20: identifier "index" is undefined
+        printf("Client Task %d\n", index);
+Sources\mqx_tasks.c: 1 warning, 2 errors
+".\UVBuild\lwmsgq_frdmkl46.axf" - 2 Error(s), 1 Warning(s).
+Target not created.
+</pre>
+</body>
+</html>

@@ -1,0 +1,19 @@
+--cpu Cortex-M0+
+"int flash debug\watchdog.o"
+--diag_suppress 6314,6314,6329 --strict --scatter "int flash debug\watchdog.sct"
+
+../../../../../../../../lib/ksdk_mqx_lib/uv4/KL43Z4/debug/ksdk_mqx_lib.lib 
+../../../../../../lib/frdmkl43z48m.uv4/debug/mqx_stdlib/mqx_stdlib.lib 
+../../../../../../lib/frdmkl43z48m.uv4/debug/bsp/bsp.lib 
+../../../../../../lib/frdmkl43z48m.uv4/debug/psp/psp.lib 
+../../../../../../lib/frdmkl43z48m.uv4/debug/bsp/bsp.lib(vectors.o) 
+../../../../../../lib/frdmkl43z48m.uv4/debug/psp/psp.lib(linker_symbols.o) 
+--keep linker_symbols.o(KERNEL_DATA_START) 
+--keep linker_symbols.o(KERNEL_DATA_END) 
+--keep linker_symbols.o(BOOT_STACK) 
+--keep vectors.o(.vectors_rom) 
+--remove 
+--autoat 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\IntFlashDebug\watchdog.map" -o "int flash debug\watchdog.axf"

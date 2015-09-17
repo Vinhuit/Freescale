@@ -1,0 +1,32 @@
+.\task_template_list.o: MQXLITE\config\task_template_list.c
+.\task_template_list.o: MQXLITE\config\task_template_list.h
+.\task_template_list.o: .\Sources\mqx_tasks.h
+.\task_template_list.o: .\Generated_Code\PE_Types.h
+.\task_template_list.o: C:\Program Files (x86)\KeilA\ARM\ARMCC\Bin\..\include\stdint.h
+.\task_template_list.o: .\Generated_Code\PE_Error.h
+.\task_template_list.o: .\Generated_Code\PE_Const.h
+.\task_template_list.o: .\Generated_Code\IO_Map.h
+.\task_template_list.o: .\Static_Code\IO_Map\MKL46Z4.h
+.\task_template_list.o: .\Generated_Code\MQX1.h
+.\task_template_list.o: .\Generated_Code\SystemTimer1.h
+.\task_template_list.o: .\Static_Code\PDD\SysTick_PDD.h
+.\task_template_list.o: .\Static_Code\PDD\PDD_Types.h
+.\task_template_list.o: .\Generated_Code\Cpu.h
+.\task_template_list.o: .\MQXLITE\include\mqxlite.h
+.\task_template_list.o: .\MQXLITE\include\mqx_cnfg.h
+.\task_template_list.o: .\MQXLITE\config\user_config.h
+.\task_template_list.o: .\MQXLITE\include\mqxlite_cnfg.h
+.\task_template_list.o: .\MQXLITE\psp\cortex_m\psptypes.h
+.\task_template_list.o: .\MQXLITE\psp\cortex_m\psp_supp.h
+.\task_template_list.o: .\MQXLITE\include\mqx_macros.h
+.\task_template_list.o: .\MQXLITE\include\queue.h
+.\task_template_list.o: .\MQXLITE\include\lwsem.h
+.\task_template_list.o: .\MQXLITE\psp\cortex_m\psp_cpu.h
+.\task_template_list.o: .\MQXLITE\psp\cortex_m\psp_cpudef.h
+.\task_template_list.o: .\MQXLITE\include\mqx_cpudef.h
+.\task_template_list.o: .\MQXLITE\psp\cortex_m\kinetis.h
+.\task_template_list.o: .\MQXLITE\psp\cortex_m\cortex.h
+.\task_template_list.o: .\MQXLITE\include\mqxlite_prv.h
+.\task_template_list.o: .\Generated_Code\CsIO1.h
+.\task_template_list.o: C:\Program Files (x86)\KeilA\ARM\ARMCC\Bin\..\include\stdio.h
+.\task_template_list.o: .\Generated_Code\IO1.h
